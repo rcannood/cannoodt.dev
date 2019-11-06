@@ -18,18 +18,18 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "Data Science"
-  description = "with [R](https://www.r-project.org) and [tidyverse](https://www.tidyverse.org)"
+  description = "R and tidyverse"
   
 [[feature]]
   icon = "github"
   icon_pack = "fab"
   name = "Software Engineering"
-  description = "with [Github](https://www.travis-ci.org), [Travis CI](https://www.travis-ci.org), Docker"  
+  description = "Github, Travis CI, and Docker"  
   
 [[feature]]
   icon = "pen-fancy"
   icon_pack = "fas"
   name = "Academic Writing"
-  description = "See my [publications](/publication) and [blog](/blog)"
+  description = "[Publications](/publication) and [blog posts](/post)"
   
 +++
