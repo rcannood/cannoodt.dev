@@ -1,6 +1,6 @@
 ---
 authors:
-- admin
+- rcannood
 bio: My research interests include computer science, machine learning, bioinformatics, and single-cell omics.
 education:
   courses:
