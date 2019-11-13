@@ -1,5 +1,5 @@
 ---
-title: "`lmd`: Landmark Multi-Dimensional Scaling"
+title: "lmds: Landmark Multi-Dimensional Scaling"
 author: rcannood
 date: 2019-11-13T20:53:00+00:00
 categories: ["Algorithms"]
