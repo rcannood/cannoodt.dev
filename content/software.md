@@ -1,9 +1,9 @@
 
 ---
-title: "Software I've written"
----
+title: "Software I've (co-)authored"
+--- 
 
-This page provides links to R packages I have (co)authored. The most recent versions of most packages are on [github.com/rcannood](https://github.com/rcannood/) or [github.com/dynverse](https://github.com/dynverse/). Most packages are also [on CRAN](https://cran.rstudio.com).
+This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on [github.com/rcannood](https://github.com/rcannood/) or [github.com/dynverse](https://github.com/dynverse/). Most packages are also [on CRAN](https://cran.rstudio.com).
 
 ## Analysing single-cell omics data
 
