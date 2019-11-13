@@ -1,0 +1,85 @@
+---
+title: "`lmd`: Landmark Multi-Dimensional Scaling"
+author: rcannood
+date: 2019-11-13T20:53:00+00:00
+categories: ["Algorithms"]
+tags: ["Algorithms"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Multi-dimensional scaling (MDS) is a useful algorithm for visualising high-dimensional data in a
+low-dimensional space. A major benefit of MDS in comparison to linear transformation methods
+such as principal component analysis (PCA) is that it allows using a custom defined distance metric, 
+not just euclidean. 
+
+```{r pcavsmds}
+library(tidyverse)
+x <- as.matrix(dyno::fibroblast_reprogramming_treutlein$expression)
+group <- dyno::fibroblast_reprogramming_treutlein$grouping
+x <- sweep(x, MARGIN = 1, runif(nrow(x), 1, 100), "*")
+
+dimred_pca <- prcomp(x)$x
+dimred_mds <- cmdscale(.5 - cor(t(x), method = "spearman") / 2)
+
+qplot(dimred_pca[,1], dimred_pca[,2], colour = group)
+qplot(dimred_mds[,1], dimred_mds[,2], colour = group)
+```
+...WIP...
+
+A while back, lmds v0.1.0 was published on [CRAN](https://cran.r-project.org/package=lmds).
+
+Landmark Multi-Dimensional Scaling (lmds) is an extension of classical Torgerson MDS.
+LMDS aims to produce the same dimensionality reduction as `cmdscale()`, but scale
+linearly with respect to the number of samples.
+
+```{r compare}
+library(lmds)
+
+x <- as.matrix(iris[,1:4])
+dimred <- lmds(x, ndim = 2)
+qplot(dimred[,1], dimred[,2]) + labs(title = "lmds()") + theme_classic()
+
+dimred <- cmdscale(dist(x))
+qplot(dimred[,1], dimred[,2]) + labs(title = "cmdscale()") + theme_classic() 
+```
+
+
+## Execution time
+The execution time of `lmds()` scales linearly with respect to the dataset size.
+```{r timings, echo=FALSE}
+largex <- Matrix::rsparsematrix(nrow = 100000, ncol = 10000, density = .01)
+
+log <- list()
+num_samples <- 100
+time <- 0
+while (time < 10) {
+  subx <- largex[seq_len(num_samples),]
+  time <- system.time({
+    dimred <- lmds(subx)
+  })[["user.self"]]
+  log[[length(log) + 1]] <- tibble(method = "lmds()", num_samples, time)
+  num_samples <- num_samples * 1.5
+}
+
+num_samples <- 100
+time <- 0
+while (time < 10) {
+  subx <- largex[seq_len(num_samples),]
+  time <- system.time({
+    dist <- dist(subx)
+    dimred <- cmdscale(dist)
+  })[["user.self"]]
+  log[[length(log) + 1]] <- tibble(method = "cmdscale()", num_samples, time)
+  num_samples <- num_samples * 1.5
+}
+
+logdf <- bind_rows(log)
+
+ggplot(logdf, aes(num_samples, time, colour = method)) + 
+  geom_point() +
+  geom_line() +
+  theme_classic()
+```

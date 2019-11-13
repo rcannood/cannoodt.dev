@@ -1,0 +1,60 @@
+---
+title: "`lmd`: Landmark Multi-Dimensional Scaling"
+author: rcannood
+date: 2019-11-13T20:53:00+00:00
+categories: ["Algorithms"]
+tags: ["Algorithms"]
+---
+
+
+
+<p>Multi-dimensional scaling (MDS) is a useful algorithm for visualising high-dimensional data in a
+low-dimensional space. A major benefit of MDS in comparison to linear transformation methods
+such as principal component analysis (PCA) is that it allows using a custom defined distance metric,
+not just euclidean.</p>
+<pre class="r"><code>library(tidyverse)
+## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+## ✔ ggplot2 3.2.1     ✔ purrr   0.3.3
+## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
+## ✔ tidyr   1.0.0     ✔ stringr 1.4.0
+## ✔ readr   1.3.1     ✔ forcats 0.4.0
+## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+x &lt;- as.matrix(dyno::fibroblast_reprogramming_treutlein$expression)
+## Loading required package: Matrix
+## 
+## Attaching package: &#39;Matrix&#39;
+## The following objects are masked from &#39;package:tidyr&#39;:
+## 
+##     expand, pack, unpack
+group &lt;- dyno::fibroblast_reprogramming_treutlein$grouping
+x &lt;- sweep(x, MARGIN = 1, runif(nrow(x), 1, 100), &quot;*&quot;)
+
+dimred_pca &lt;- prcomp(x)$x
+dimred_mds &lt;- cmdscale(.5 - cor(t(x), method = &quot;spearman&quot;) / 2)
+
+qplot(dimred_pca[,1], dimred_pca[,2], colour = group)</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/pcavsmds-1.png" width="672" /></p>
+<pre class="r"><code>qplot(dimred_mds[,1], dimred_mds[,2], colour = group)</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/pcavsmds-2.png" width="672" />
+…WIP…</p>
+<p>A while back, lmds v0.1.0 was published on <a href="https://cran.r-project.org/package=lmds">CRAN</a>.</p>
+<p>Landmark Multi-Dimensional Scaling (lmds) is an extension of classical Torgerson MDS.
+LMDS aims to produce the same dimensionality reduction as <code>cmdscale()</code>, but scale
+linearly with respect to the number of samples.</p>
+<pre class="r"><code>library(lmds)
+
+x &lt;- as.matrix(iris[,1:4])
+dimred &lt;- lmds(x, ndim = 2)
+qplot(dimred[,1], dimred[,2]) + labs(title = &quot;lmds()&quot;) + theme_classic()</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/compare-1.png" width="672" /></p>
+<pre class="r"><code>
+dimred &lt;- cmdscale(dist(x))
+qplot(dimred[,1], dimred[,2]) + labs(title = &quot;cmdscale()&quot;) + theme_classic() </code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/compare-2.png" width="672" /></p>
+<div id="execution-time" class="section level2">
+<h2>Execution time</h2>
+<p>The execution time of <code>lmds()</code> scales linearly with respect to the dataset size.
+<img src="/post/2019-11-13_lmds-release/index_files/figure-html/timings-1.png" width="672" /></p>
+</div>
