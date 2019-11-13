@@ -7,3 +7,4 @@ blogdown
 Thumbs.db
 public/
 resources/
+.httr-oauth
