@@ -113,9 +113,9 @@ dimred_lmds2 <- lmds(
 In the figure below, the execution times of MDS and LMDS are compared by increasing 
 the size of a random dataset until the execution of either algorithms exceeds 10 seconds.
 
-```{r timings, echo=FALSE, eval=F}
+```{r timings, echo=FALSE, eval=TRUE}
 largex <- Matrix::rsparsematrix(nrow = 100000, ncol = 10000, density = .01)
-
+ 
 log <- list()
 num_samples <- 100
 time <- 0
@@ -127,7 +127,7 @@ while (time < 10) {
   log[[length(log) + 1]] <- tibble(method = "lmds()", num_samples, time)
   num_samples <- num_samples * 1.5
 }
-
+ 
 num_samples <- 100
 time <- 0
 while (time < 10) {
@@ -162,3 +162,5 @@ in the dataset. Go ahead and check out our implementation for this algorithm,
 available on [`CRAN`](https://cran.r-project.org/package=lmds).
 If you encounter any issues, feel free to let me know by creating an 
 [issue post](https://github.com/dynverse/lmds/issues) on Github.
+
+## References

@@ -18,7 +18,7 @@ method used for visualising and denoising high-dimensional data. However, since 
 calculating the distances between all pairs of data points, it does not scale well to datasets
 with a large number of samples.</p>
 <p>We released <a href="https://cran.r-project.org/package=lmds">lmds v0.1.0</a>, an implementation of
-Landmark MDS (LMDS) <span class="citation">(Silva and Tenenbaum 2004)</span>. Landmark MDS only calculates the distances between a set of landmarks
+Landmark MDS (LMDS) <span class="citation">(de Silva and Tenenbaum 2004)</span>. Landmark MDS only calculates the distances between a set of landmarks
 and all other data points, thereby sacrificing determinism for scalability.</p>
 <div id="regular-mds" class="section level2">
 <h2>Regular MDS</h2>
@@ -61,7 +61,7 @@ it is increasingly infeasible to apply MDS.</p>
 </div>
 <div id="landmark-mds" class="section level2">
 <h2>Landmark MDS</h2>
-<p>Landmark MDS (LMDS) <span class="citation">(Silva and Tenenbaum 2004)</span> is an extension of MDS which scales much
+<p>Landmark MDS (LMDS) <span class="citation">(de Silva and Tenenbaum 2004)</span> is an extension of MDS which scales much
 better with respect to the number of data points in the dataset. A short while ago,
 we published an R package on CRAN implementing this algorithm,
 <a href="https://cran.r-project.org/package=lmds">lmds v0.1.0</a>.</p>
@@ -98,6 +98,7 @@ qplot(dimred_lmds[,1], dimred_lmds[,2], colour = dataset$grouping) +
 <h2>Execution time</h2>
 <p>In the figure below, the execution times of MDS and LMDS are compared by increasing
 the size of a random dataset until the execution of either algorithms exceeds 10 seconds.</p>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/timings-1.png" width="672" /></p>
 </div>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
@@ -106,12 +107,15 @@ in the dataset. Go ahead and check out our implementation for this algorithm,
 available on <a href="https://cran.r-project.org/package=lmds"><code>CRAN</code></a>.
 If you encounter any issues, feel free to let me know by creating an
 <a href="https://github.com/dynverse/lmds/issues">issue post</a> on Github.</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
 <div id="refs" class="references">
+<div id="ref-de_silva_sparse_2004">
+<p>de Silva, Vin, and Joshua B Tenenbaum. 2004. “Sparse Multidimensional Scaling Using Landmark Points.” <em>Technical Report, Stanford University</em>, 41.</p>
+</div>
 <div id="ref-kruskal_multidimensional_1964">
 <p>Kruskal, J. B. 1964. “Multidimensional Scaling by Optimizing Goodness of Fit to a Nonmetric Hypothesis.” <em>Psychometrika</em> 29 (1): 1–27. <a href="https://doi.org/10.1007/BF02289565">https://doi.org/10.1007/BF02289565</a>.</p>
-</div>
-<div id="ref-de_silva_sparse_2004">
-<p>Silva, Vin de, and Joshua B Tenenbaum. 2004. “Sparse Multidimensional Scaling Using Landmark Points.” <em>Technical Report, Stanford University</em>, 41.</p>
 </div>
 </div>
 </div>
