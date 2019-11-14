@@ -2,59 +2,106 @@
 title: "lmds: Landmark Multi-Dimensional Scaling"
 author: rcannood
 date: 2019-11-13T20:53:00+00:00
-categories: ["Algorithms"]
-tags: ["Algorithms"]
+categories: ["Data mining"]
+tags: ["Data mining", "Dimensionality reduction"] 
+summary: "A fast dimensionality reduction method scaleable to large numbers of samples."
+subtitle: "A fast dimensionality reduction method scaleable to large numbers of samples."
+image:
+  caption: "A dimensionality reduction obtained by lmds."
 ---
 
 
 
-<p>Multi-dimensional scaling (MDS) is a useful algorithm for visualising high-dimensional data in a
-low-dimensional space. A major benefit of MDS in comparison to linear transformation methods
-such as principal component analysis (PCA) is that it allows using a custom defined distance metric,
-not just euclidean.</p>
+<p>Multi-dimensional scaling (MDS) is a dimensionality reduction method used for visualising and
+denoising high-dimensional data. However, since MDS requires calculating the distances between
+all pairs of data points, it does not scale well to datasets with a large number of samples.</p>
+<p>We released <a href="https://cran.r-project.org/package=lmds">lmds v0.1.0</a>, an implementation of
+Landmark MDS (LMDS). Landmark MDS only calculates the distances between a set of landmarks
+and all other data points, thereby sacrificing determinism for scalability.</p>
+<div id="regular-mds" class="section level2">
+<h2>Regular MDS</h2>
+<p>A single-cell transcriptomics dataset is used to demonstrate the usefulness of (L)MDS.
+The dataset contains 392 profiles of simulated cells, measuring the abundance levels of 2000
+molecules within the cell.
+Simply looking at the raw expression values as a heatmap reveals little to no information:</p>
 <pre class="r"><code>library(tidyverse)
-## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
-## ✔ ggplot2 3.2.1     ✔ purrr   0.3.3
-## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
-## ✔ tidyr   1.0.0     ✔ stringr 1.4.0
-## ✔ readr   1.3.1     ✔ forcats 0.4.0
-## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()
-x &lt;- as.matrix(dyno::fibroblast_reprogramming_treutlein$expression)
-## Loading required package: Matrix
-## 
-## Attaching package: &#39;Matrix&#39;
-## The following objects are masked from &#39;package:tidyr&#39;:
-## 
-##     expand, pack, unpack
-group &lt;- dyno::fibroblast_reprogramming_treutlein$grouping
-x &lt;- sweep(x, MARGIN = 1, runif(nrow(x), 1, 100), &quot;*&quot;)
+set.seed(1)
 
-dimred_pca &lt;- prcomp(x)$x
-dimred_mds &lt;- cmdscale(.5 - cor(t(x), method = &quot;spearman&quot;) / 2)
+dataset &lt;- dyno::fibroblast_reprogramming_treutlein
 
-qplot(dimred_pca[,1], dimred_pca[,2], colour = group)</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/pcavsmds-1.png" width="672" /></p>
-<pre class="r"><code>qplot(dimred_mds[,1], dimred_mds[,2], colour = group)</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/pcavsmds-2.png" width="672" />
-…WIP…</p>
-<p>A while back, lmds v0.1.0 was published on <a href="https://cran.r-project.org/package=lmds">CRAN</a>.</p>
-<p>Landmark Multi-Dimensional Scaling (lmds) is an extension of classical Torgerson MDS.
-LMDS aims to produce the same dimensionality reduction as <code>cmdscale()</code>, but scale
-linearly with respect to the number of samples.</p>
+cell_info &lt;- data.frame(grouping = dataset$grouping)
+
+pheatmap::pheatmap(
+  t(as.matrix(dataset$expression)),
+  show_colnames = FALSE,
+  show_rownames = FALSE,
+  annotation_col = cell_info
+)</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/heatmap-1.png" width="672" /></p>
+<p>Applying MDS quickly reveals the underlying bifurcating topology of the dataset
+(from MEF to myocytes and neurons).</p>
+<pre class="r"><code># compute distance matrix
+dist &lt;- dynutils::calculate_distance(dataset$expression, method = &quot;pearson&quot;)
+dim(dist)
+## [1] 392 392
+
+# compute MDS
+dimred_mds &lt;- cmdscale(dist)
+
+# plot points
+qplot(dimred_mds[,1], dimred_mds[,2], colour = dataset$grouping) +
+  theme_bw() +
+  labs(x = &quot;Comp 1&quot;, y = &quot;Comp 2&quot;, colour = &quot;Group&quot;)</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/mds-1.png" width="672" /></p>
+<p>Regular MDS, however, requires computing all pairwise distances between data points.
+This dataset only contains 392 data points, but for datasets
+it is increasingly infeasible to apply MDS.</p>
+</div>
+<div id="landmark-mds" class="section level2">
+<h2>Landmark MDS</h2>
+<p>Landmark MDS (LMDS) is an extension of MDS which scales much better with respect to the number
+of data points in the dataset. A short while ago, we published an R package on CRAN implementing
+this algorithm, <a href="https://cran.r-project.org/package=lmds">lmds v0.1.0</a>.</p>
+<p>Landmark MDS only computes the distance matrix between a set of landmarks and all other data points.
+MDS is then only performed on the landmarks, and all other datapoints are projected into
+the landmark space.</p>
 <pre class="r"><code>library(lmds)
 
-x &lt;- as.matrix(iris[,1:4])
-dimred &lt;- lmds(x, ndim = 2)
-qplot(dimred[,1], dimred[,2]) + labs(title = &quot;lmds()&quot;) + theme_classic()</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/compare-1.png" width="672" /></p>
-<pre class="r"><code>
-dimred &lt;- cmdscale(dist(x))
-qplot(dimred[,1], dimred[,2]) + labs(title = &quot;cmdscale()&quot;) + theme_classic() </code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/compare-2.png" width="672" /></p>
+# compute distances between random landmarks and all data points
+dist_landmarks &lt;- select_landmarks(
+  dataset$expression,
+  distance_method = &quot;pearson&quot;,
+  num_landmarks = 150
+)
+dim(dist_landmarks)
+## [1] 150 392
+
+# perform LMDS
+dimred_lmds &lt;- cmdscale_landmarks(dist_landmarks)
+
+# plot points
+qplot(dimred_lmds[,1], dimred_lmds[,2], colour = dataset$grouping) +
+  theme_bw() +
+  labs(x = &quot;Comp 1&quot;, y = &quot;Comp 2&quot;, colour = &quot;Group&quot;)</code></pre>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/lmds_dist-1.png" width="672" /></p>
+<p>Most frequently, these two steps can be applied together as follows:</p>
+<pre class="r"><code>dimred_lmds2 &lt;- lmds(
+  dataset$expression,
+  distance_method = &quot;pearson&quot;, 
+  num_landmarks = 150
+)</code></pre>
+</div>
 <div id="execution-time" class="section level2">
 <h2>Execution time</h2>
-<p>The execution time of <code>lmds()</code> scales linearly with respect to the dataset size.
-<img src="/post/2019-11-13_lmds-release/index_files/figure-html/timings-1.png" width="672" /></p>
+<p>In the figure below, the execution times of MDS and LMDS are compared by increasing
+the size of a random dataset until the execution of either algorithms exceeds 10 seconds.</p>
+<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/timings-1.png" width="672" /></p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>LMDS is a heuristic for MDS which scales linearly with respect to the number of points
+in the dataset. <a href="https://cran.r-project.org/package=lmds"><code>lmds::lmds()</code></a> provides
+an implementation for this algorithm, check it out! If you encounter any
+issues, feel free to let me know by creating an
+<a href="https://github.com/dynverse/lmds/issues">issue post</a> on Github.</p>
 </div>
