@@ -15,7 +15,7 @@ bibliography: references.bib
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-Multi-dimensional scaling (MDS) [@kruskal_multidimensional_1964] is a dimensionality reduction 
+Multi-dimensional scaling (MDS) [@kruskal_multidimensional_1964] is a dimensionality reduction
 method used for visualising and denoising high-dimensional data. However, since MDS requires 
 calculating the distances between all pairs of data points, it does not scale well to datasets 
 with a large number of samples.
