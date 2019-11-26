@@ -21,8 +21,7 @@ This page provides links to R packages I have (co-)authored. The most recent ver
 * [**dyntoy**](https://github.com/dynverse/dyntoy): Generating simple toy data of cellular differentiation
 * [**dynutils**](https://github.com/dynverse/dynutils): Common functionality for the dynverse packages, [CRAN](https://cran.r-project.org/package=dynutils)
 * [**dynwrap**](https://github.com/dynverse/dynwrap): A common format for trajectories, [CRAN](https://cran.r-project.org/package=dynwrap)
-* [**SCORPIUS**](https://github.com/rcannood/SCORPIUS): Inferring developmental chronologies from single-cell RNA
-sequencing data, [CRAN](https://cran.r-project.org/package=SCORPIUS)
+* [**SCORPIUS**](https://github.com/rcannood/SCORPIUS): Inferring developmental chronologies from single-cell omics, [CRAN](https://cran.r-project.org/package=SCORPIUS)
 
 ## Algorithms
 
@@ -33,12 +32,12 @@ sequencing data, [CRAN](https://cran.r-project.org/package=SCORPIUS)
 * [**incgraph**](https://github.com/rcannood/incgraph): Incremental graphlet counting for network optimisation, [CRAN](https://cran.r-project.org/package=incgraph)
 * [**lmds**](https://github.com/dynverse/lmds): Landmark Multi-Dimensional Scaling, [CRAN](https://cran.r-project.org/package=lmds)
 * [**princurve**](https://github.com/rcannood/princurve): Fits a principal curve in arbitrary dimension, [CRAN](https://cran.r-project.org/package=princurve)
+* [**proxyC**](https://github.com/koheiw/proxyC): Computes proximity in large sparse matrices, [CRAN](https://cran.r-project.org/package=proxyC)
 
 
 ## Software development
 
 * [**babelwhale**](https://github.com/dynverse/babelwhale): Interacting with Docker and Singularity containers, [CRAN](https://cran.r-project.org/package=babelwhale)
-* [**proxyC**](https://github.com/koheiw/proxyC): Computes proximity in large sparse matrices, [CRAN](https://cran.r-project.org/package=proxyC)
 * [**qsub**](https://github.com/rcannood/qsub): Running commands remotely on gridengine clusters, [CRAN](https://cran.r-project.org/package=qsub)
 
 ## Contributions
