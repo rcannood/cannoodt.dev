@@ -6,7 +6,7 @@ education:
   courses:
   - course: PhD in Computer Science
     institution: Ghent University
-    year: 2019
+    year: December 2019
   - course: MEng in Computer Science
     institution: Ghent University
     year: 2013
@@ -25,7 +25,7 @@ interests:
 - Single-Cell Omics
 name: Robrecht Cannoodt
 organizations:
-- name: VIB and Ghent University
+- name: Ghent University and VIB
   url: ""
 role: Data Scientist
 social:
@@ -50,8 +50,7 @@ user_groups:
 - Visitors
 ---
 
-Hello! I'm Robrecht Cannoodt, a researcher in Computer Science at [Ghent University](https://www.ugent.be) and [VIB](http://www.vib.be). I enjoy developing and contributing to data science software projects, many of which are on my [Github](https://github.com/rcannood) page.
+Hello! I'm Robrecht Cannoodt, a researcher in Computer Science at [Ghent University](https://www.ugent.be) and [VIB](http://www.vib.be).
+I am currently in the last steps of wrapping up my PhD, for which I am expected to graduate in December 2019.
 
-My work mostly involves developing open-source R packages, and can be largely split up in two categories: tools for analysing single-cell omics data ([dyngen](https://github.com/dynverse/dyngen), [dyno](https://github.com/dynverse/dyno), [SCORPIUS](https://cran.r-project.org/package=SCORPIUS)), and general-purpose data mining algorithms ([lmds](https://cran.r-project.org/package=lmds), [GillespieSSA2](https://cran.r-project.org/package=GillespieSSA2), [gng](https://github.com/rcannood/gng), [princurve](https://cran.r-project.org/package=princurve)). 
-For each of these packages, I aim to automate execution of unit tests and write extensive documentation to ensure the functionality provided by my code works as intended.
-Check out the [Software](software/) page for more information on each of these packages.
+I enjoy developing and contributing to data science software projects (See [Software](software)). In particular, I enjoy developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing [single-cell omics](https://en.wikipedia.org/wiki/Single_cell_sequencing) data, but many of these software packages can be used for general-purpose data mining applications.
