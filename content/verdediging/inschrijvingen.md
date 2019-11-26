@@ -13,15 +13,17 @@ subtitle = ""
 
 <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label><b>Naam</b><br/><input type="text" name="naam" /></label>   
+    <label><b>Naam</b></label><br/>
+    <input type="text" name="naam" />
   </p>
   <p>
-    <label><b>Receptie</b></br>
-    <input type="radio" name="receptie" value="ja" checked> Ja <br/> <input type="radio" name="receptie" value="nee"> Nee
-    </label>
+    <label><b>Receptie</b></label></br>
+    <input type="radio" name="receptie" value="ja" checked/> Ja <br/> 
+    <input type="radio" name="receptie" value="nee"/> Nee
   </p>
-  <p>
-    <label><b>Aantal personen</b><br/><input type="text" name="number" /></label>   
+  <p> 
+    <label><b>Aantal personen</b></label><br/>
+    <input type="text" name="number" />
   </p>
   <p>
     <button type="submit">Send</button>
