@@ -11,23 +11,25 @@ subtitle = ""
   padding = ["30px", "0", "30px", "0"]
 +++
 
-<form name="contact" method="POST" data-netlify="true">
+<form name="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2A2zsi8q_FMZz5gU5FylrhvIh5BCeQGirnWkp2pYTupdQjA/formResponse">
   <p>
     <label><b>Naam</b><br/>
-    <input type="text" name="naam" required/></label>
+    <input type="text" name="entry.384851141" required/></label>
   </p>
   <p>
-    <label><b>Receptie</b><br/><select name="role[]">
-      <option value="ja">Ja</option>
-      <option value="nee">Nee</option>
+    <label><b>Receptie</b><br/><select name="entry.1186281337">
+      <option value="Ja">Ja</option>
+      <option value="Nee">Nee</option>
     </select></label>
   </p>
   <p> 
     <label><b>Aantal personen</b><br/>
-    <input type="text" name="number" value="1" required/></label>
+    <input type="text" name="entry.1751887386" value="1" required/></label>
   </p>
   <p>
     <button type="submit">Send</button>
   </p>
 </form>
 
+
+<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2A2zsi8q_FMZz5gU5FylrhvIh5BCeQGirnWkp2pYTupdQjA/viewform?embedded=true" width="640" height="788" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
