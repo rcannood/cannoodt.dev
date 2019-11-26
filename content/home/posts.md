@@ -65,3 +65,5 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
+Posts related to the R will be contributed to the [R-bloggers.com](https://www.r-bloggers.com/) community.
