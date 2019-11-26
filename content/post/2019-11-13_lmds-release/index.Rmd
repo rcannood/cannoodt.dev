@@ -25,11 +25,12 @@ Landmark MDS (LMDS) [@de_silva_sparse_2004]. Landmark MDS only calculates the di
 and all other data points, thereby sacrificing determinism for scalability.
 
 ## Regular MDS
-A single-cell transcriptomics dataset is used to demonstrate the usefulness of (L)MDS.
-The dataset contains 392 profiles of simulated cells, measuring the abundance levels of 2000 
-molecules within the cell.
-Simply looking at the raw expression values as a heatmap reveals little to no information:
+A single-cell transcriptomics dataset [@treutlein_dissectingdirectreprogramming_2016] is used to demonstrate (L)MDS, 
+containing 392 profiles which measure the abundance levels of 2000 differentmolecules within individual cells.
+Note that while the dataset is thus only a 392×2000 matrix, LMDS is designed to scale to much higher dimensionality, as demonstrated in the last section.
 
+Simply looking at the raw expression values as a heatmap reveals little to no information:
+ 
 ```{r heatmap, message=FALSE, warning=FALSE}
 library(tidyverse)
 set.seed(1)

@@ -3,7 +3,7 @@ title: "lmds: Landmark Multi-Dimensional Scaling"
 author: rcannood
 date: 2019-11-13T20:53:00+00:00
 categories: ["Data mining"]
-tags: ["Data mining", "Dimensionality reduction"] 
+tags: ["Data mining", "Dimensionality reduction", "R"]
 summary: "A fast dimensionality reduction method scaleable to large numbers of samples."
 subtitle: "A fast dimensionality reduction method scaleable to large numbers of samples."
 image:
@@ -22,10 +22,10 @@ Landmark MDS (LMDS) <span class="citation">(de Silva and Tenenbaum 2004)</span>.
 and all other data points, thereby sacrificing determinism for scalability.</p>
 <div id="regular-mds" class="section level2">
 <h2>Regular MDS</h2>
-<p>A single-cell transcriptomics dataset is used to demonstrate the usefulness of (L)MDS.
-The dataset contains 392 profiles of simulated cells, measuring the abundance levels of 2000
-molecules within the cell.
-Simply looking at the raw expression values as a heatmap reveals little to no information:</p>
+<p>A single-cell transcriptomics dataset <span class="citation">(<span class="citeproc-not-found" data-reference-id="treutlein_dissectingdirectreprogramming_2016"><strong>???</strong></span>)</span> is used to demonstrate (L)MDS,
+containing 392 profiles which measure the abundance levels of 2000 differentmolecules within individual cells.
+Note that while the dataset is thus only a 392×2000 matrix, LMDS is designed to scale to much higher dimensionality, as demonstrated in the last section.</p>
+<p>Simply looking at the raw expression values as a heatmap reveals little to no information:</p>
 <pre class="r"><code>library(tidyverse)
 set.seed(1)
 
