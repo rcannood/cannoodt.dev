@@ -12,8 +12,8 @@ subtitle = "Geschatte tijden"
 +++
 
 - 16u00 **Inleiding publieke verdediging**
-- 16u15 **Presentatie door kandidaat**
-- 17u00 **Examinatie door de jury**
+- 16u05 **Presentatie door kandidaat**
+- 16u50 **Examinatie door de jury**
 - 17u30 **Vragen uit het publiek**
 - 17u45 **Slotwoord**
-- 18u00 **Receptie op Hongkongse wijze**
+- 18u00 **Receptie**
