@@ -27,8 +27,9 @@ Beste vriend, familie en/of collega,
 
 Graag wil ik jou van harte uitnodigen op de openbare verdediging van mijn doctoraal proefschrift getiteld: *"Modelling single-cell dynamics with trajectories and gene regulatory networks"*. Hierin voer ik fundamenteel onderzoek uit naar celontwikkeling door middel van allerhande computerprogramma's. 
 
-Gelieve jouw aanwezigheid vóór 1 december te bevestigen via het onderstaande formulier.
+De verdediging gaat door op maandag 16 december 2019 om 16u in de seminariezaal in het FSVM onderzoeksgebouw ([Technologiepark 71, 9070 Zwijnaarde](#locatie)) en wordt gevolgd met een receptie.
 
-Hopelijk tot dan!
+**Gelieve jouw aanwezigheid vóór 1 december te bevestigen via [het onderstaande formulier](#inschrijven).**
 
+Met vriendelijke groeten,<br/>
 Robrecht
