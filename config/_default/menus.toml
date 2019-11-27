@@ -32,6 +32,11 @@
   name = "Contact"
   url = "#contact"
   weight = 60
+
+[[main]]
+  name = "|"
+  url = ""
+  weight = 70
   
 [[main]]
   name = "PhD verdediging"

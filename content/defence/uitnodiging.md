@@ -25,9 +25,9 @@ subtitle = "Monday 16 December 2019 at 16h"
 
 Dear friend, family and/or colleague,
 
-I'm happy to invite you to the public defence of my doctoral dissertation titled: *"Modelling single-cell dynamics with trajectories and gene regulatory networks"*. In this work, I perform fundamental research in how cells develop using various computer programs. Unfortunately, the whole defence will be in Dutch, but my body language will be in English.
+It's my pleasure to invite you to the public defence of my doctoral dissertation titled: *"Modelling single-cell dynamics with trajectories and gene regulatory networks"*. In this work, I perform fundamental research on how cells develop using various computer programs. Unfortunately, the whole defence will be in Dutch, but my body language will be in English.
 
-Please confirm your presence before 1 december using the form below.
+Please confirm your presence before 1 December using the form below.
 
 See you soon!
 
