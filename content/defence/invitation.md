@@ -27,7 +27,7 @@ Dear friend, family and/or colleague,
 
 It's my pleasure to invite you to the public defence of my doctoral dissertation titled: *"Modelling single-cell dynamics with trajectories and gene regulatory networks"*. In this work, I perform fundamental research on how cells develop using various computer programs. Unfortunately, the whole defence will be in Dutch, but my body language will be in English.
 
-The defence will take place on Monday 16 December 2019 at 16h in the Seminar room in the FSVM research building ([Technologiepark 71, 9070 Zwijnaarde](#location)) and will be followed by a reception starting at 18h. 
+The defence will take place on Monday 16 December 2019 at 16h in the Seminar room in the FSVM research building ([Technologiepark 71, 9070 Zwijnaarde](#location)) and will be followed by a reception. 
 
 **Please confirm your attendance before 1 December using [the form below](#register).**
 
