@@ -43,9 +43,9 @@ This page provides links to R packages I have (co-)authored. The most recent ver
 ## Contributions
 I also help maintain or extend other packages on Github, CRAN or Bioconductor on which I often depend.
 
-* Speeding up algorithms: [slingshot](https://www.bioconductor.org/packages/slingshot)
-* Implementing new functionality: [ggrepel](https://cran.r-project.org/package=ggrepel), [ParamHelpers](https://cran.r-project.org/package=ParamHelpers), [ranger](https://cran.r-project.org/package=ranger), [rlang](https://cran.r-project.org/package=rlang)
-* Fixing bugs: [devtools](https://cran.r-project.org/package=devtools), [proxyC](https://cran.r-project.org/package=proxyC), [monocle](https://www.bioconductor.org/packages/monocle), [shadowtext](https://cran.r-project.org/package=shadowtext)
-* Maintaining orphaned packages: [diffusionMap](https://cran.r-project.org/package=diffusionMap), [princurve](https://cran.r-project.org/package=princurve), [GillespieSSA](https://cran.r-project.org/package=GillespieSSA)
-* Extending / fixing documentation: [devtools](https://cran.r-project.org/package=devtools), [mlr](https://cran.r-project.org/package=mlr), [remotes](https://cran.r-project.org/package=remotes), [tidyverse](https://cran.r-project.org/package=tidyverse)
-* Fixing issues with continuous integration systems: [Rdimtools](https://cran.r-project.org/package=Rdimtools), [slingshot](https://www.bioconductor.org/packages/slingshot), [monocle](https://www.bioconductor.org/packages/monocle), [splatter](https://www.bioconductor.org/packages/splatter)
+* Optimise: [slingshot](https://www.bioconductor.org/packages/slingshot)
+* New functionality: [ggrepel](https://cran.r-project.org/package=ggrepel), [ParamHelpers](https://cran.r-project.org/package=ParamHelpers), [ranger](https://cran.r-project.org/package=ranger), [rlang](https://cran.r-project.org/package=rlang)
+* Fixing bugs: [devtools](https://cran.r-project.org/package=devtools), [monocle](https://www.bioconductor.org/packages/monocle), [proxyC](https://cran.r-project.org/package=proxyC), [rticles](https://cran.r-project.org/package=rticles), [shadowtext](https://cran.r-project.org/package=shadowtext)
+* Maintaining packages: [diffusionMap](https://cran.r-project.org/package=diffusionMap), [princurve](https://cran.r-project.org/package=princurve), [GillespieSSA](https://cran.r-project.org/package=GillespieSSA)
+* Documentation: [devtools](https://cran.r-project.org/package=devtools), [mlr](https://cran.r-project.org/package=mlr), [remotes](https://cran.r-project.org/package=remotes), [tidyverse](https://cran.r-project.org/package=tidyverse)
+* Fixing issues with Travis CI: [Rdimtools](https://cran.r-project.org/package=Rdimtools), [slingshot](https://www.bioconductor.org/packages/slingshot), [monocle](https://www.bioconductor.org/packages/monocle), [splatter](https://www.bioconductor.org/packages/splatter)
