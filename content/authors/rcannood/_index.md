@@ -51,6 +51,6 @@ user_groups:
 ---
 
 Hello! I'm Robrecht Cannoodt, a researcher in Computer Science at [Ghent University](https://www.ugent.be) and [VIB](http://www.vib.be).
-I am currently in the last steps of wrapping up my PhD, for which I am expected to graduate in December 2019.
+I just obtained my PhD in December 2019. Feel free to take a look at [my dissertation](files/phdthesis.pdf).
 
-I enjoy developing and contributing to data science software projects (See [Software](software)). In particular, I enjoy developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing [single-cell omics](https://en.wikipedia.org/wiki/Single_cell_sequencing) data, but many of these software packages can be used for general-purpose data mining applications.
+I enjoy developing and contributing to data science software projects (See [Software](software)). In particular, I enjoy developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing [single-cell omics](https://en.wikipedia.org/wiki/Single_cell_sequencing) data, and tools for benchmarking single-cell omics tools. However, many of the software packages I (co-)developed can be used for general-purpose data mining applications.
