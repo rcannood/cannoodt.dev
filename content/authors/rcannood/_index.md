@@ -25,9 +25,9 @@ interests:
 - Single-Cell Omics
 name: Robrecht Cannoodt
 organizations:
-- name: Ghent University and VIB
-  url: ""
-role: Data Scientist
+- name: Data Intuitive
+  url: "http://www.data-intuitive.com"
+role: Data Science Consultant
 social:
 - icon: envelope
   icon_pack: fas
@@ -50,7 +50,6 @@ user_groups:
 - Visitors
 ---
 
-Hello! I'm Robrecht Cannoodt, a researcher in Computer Science at [Ghent University](https://www.ugent.be) and [VIB](http://www.vib.be).
-I just obtained my PhD in December 2019. Feel free to take a look at [my dissertation](files/phdthesis.pdf).
+Hello, my name is Robrecht Cannoodt. I just obtained by PhD as a computer scientist specialising in data science ([dissertation](files/phdthesis.pdf)). I work as a data science consultant at Data Intuitive and as a postdoctoral researcher at VIB - Ghent University.
 
-I enjoy developing and contributing to data science software projects (See [Software](software)). In particular, I enjoy developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing [single-cell omics](https://en.wikipedia.org/wiki/Single_cell_sequencing) data, and tools for benchmarking single-cell omics tools. However, many of the software packages I (co-)developed can be used for general-purpose data mining applications.
+I enjoy developing and contributing to data science software projects (See [Software](software)). In particular: developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing single-cell omics data, and tools for benchmarking single-cell omics tools. However, many of the software packages I (co-)developed can be used for general-purpose data mining applications.
