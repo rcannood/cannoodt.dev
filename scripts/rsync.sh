@@ -1,0 +1,1 @@
+hugo && sudo rsync --chown=http:http -avz --delete --exclude lime public/ /usr/share/blogdown

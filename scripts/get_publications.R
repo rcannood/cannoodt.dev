@@ -7,9 +7,6 @@ works <- works(orcid)
 
 works %>% slice(1) %>% as.list
 
-
-works %>% map("external-ids.external_id") %>% map(~ .[[1]]$external-id-url.value)
-
 dois <- 
   works$`external-ids.external-id` %>% 
   map_df(function(df) df %>% filter(`external-id-type` == "doi")) %>% 
