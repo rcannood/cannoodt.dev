@@ -5,7 +5,7 @@ orcid <- as.orcid(x = "0000-0003-3641-729X", verbose = TRUE)
 
 works <- works(orcid)
 
-works %>% slice(1) %>% as.list
+works %>% as.data.frame() %>% slice(1) %>% as.list
 
 dois <- 
   works$`external-ids.external-id` %>% 

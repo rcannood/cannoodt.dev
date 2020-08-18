@@ -18,7 +18,7 @@ publication_types:
 - '2'
 publishDate: '2016-09-28T00:00:00Z'
 # slides: example
-summary:  We highlight several practical advantages and disadvantages of the different trajectory inference methods.
+summary: We highlight several practical advantages and disadvantages of the different trajectory inference methods.
 # tags:
 # - Example Tag
 title: 'Computational methods for trajectory inference from single-cell transcriptomics'
