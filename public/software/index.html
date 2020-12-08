@@ -1,0 +1,1035 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on github.com/rcannood or github.com/dynverse. Most packages are also on CRAN.
+Analysing single-cell omics data  dynbenchmark: Pipeline for benchmarking trajectory inference methods dyndimred: Applying dimensionality reduction methods, CRAN dyneval: Evaluating trajectory inference methods dynfeature: Calculating feature importance scores from trajectories dyngen: Simulating single-cell data using gene regulatory networks dynguidelines: User guidelines for trajectory inference dynmethods: A collection of wrappers for trajectory inference methods dyno: A pipeline for inferring, visualising and interpreting trajectories dynparam: Creating meta-information for parameters, CRAN dynplot: A simple visualisation library for trajectories dynplot2: A fully customisable visualisation library for trajectories dyntoy: Generating simple toy data of cellular differentiation dynutils: Common functionality for the dynverse packages, CRAN dynwrap: A common format for trajectories, CRAN SCORPIUS: Inferring developmental chronologies from single-cell omics, CRAN  Algorithms  diffusionMap: Implements diffusion map method of data parameterization CRAN GillespieSSA: Gillespie’s Stochastic Simulation Algorithm (SSA), CRAN GillespieSSA2: Gillespie’s Stochastic Simulation Algorithm for Impatient People, CRAN gng: Growing Neural Gas implemented in Rcpp incgraph: Incremental graphlet counting for network optimisation, CRAN lmds: Landmark Multi-Dimensional Scaling, CRAN princurve: Fits a principal curve in arbitrary dimension, CRAN proxyC: Computes proximity in large sparse matrices, CRAN  Software development  babelwhale: Interacting with Docker and Singularity containers, CRAN qsub: Running commands remotely on gridengine clusters, CRAN  Contributions I also help maintain or extend other packages on Github, CRAN or Bioconductor on which I often depend.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://www.cannoodt.dev/software/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.1c55e0a47f7e1b9753c5a31f7b7f455d.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143597662-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-143597662-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://www.cannoodt.dev/software/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@rcannood">
+  <meta property="twitter:creator" content="@rcannood">
+  
+  <meta property="og:site_name" content="Robrecht Cannoodt">
+  <meta property="og:url" content="https://www.cannoodt.dev/software/">
+  <meta property="og:title" content="Software I&#39;ve (co-)authored | Robrecht Cannoodt">
+  <meta property="og:description" content="This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on github.com/rcannood or github.com/dynverse. Most packages are also on CRAN.
+Analysing single-cell omics data  dynbenchmark: Pipeline for benchmarking trajectory inference methods dyndimred: Applying dimensionality reduction methods, CRAN dyneval: Evaluating trajectory inference methods dynfeature: Calculating feature importance scores from trajectories dyngen: Simulating single-cell data using gene regulatory networks dynguidelines: User guidelines for trajectory inference dynmethods: A collection of wrappers for trajectory inference methods dyno: A pipeline for inferring, visualising and interpreting trajectories dynparam: Creating meta-information for parameters, CRAN dynplot: A simple visualisation library for trajectories dynplot2: A fully customisable visualisation library for trajectories dyntoy: Generating simple toy data of cellular differentiation dynutils: Common functionality for the dynverse packages, CRAN dynwrap: A common format for trajectories, CRAN SCORPIUS: Inferring developmental chronologies from single-cell omics, CRAN  Algorithms  diffusionMap: Implements diffusion map method of data parameterization CRAN GillespieSSA: Gillespie’s Stochastic Simulation Algorithm (SSA), CRAN GillespieSSA2: Gillespie’s Stochastic Simulation Algorithm for Impatient People, CRAN gng: Growing Neural Gas implemented in Rcpp incgraph: Incremental graphlet counting for network optimisation, CRAN lmds: Landmark Multi-Dimensional Scaling, CRAN princurve: Fits a principal curve in arbitrary dimension, CRAN proxyC: Computes proximity in large sparse matrices, CRAN  Software development  babelwhale: Interacting with Docker and Singularity containers, CRAN qsub: Running commands remotely on gridengine clusters, CRAN  Contributions I also help maintain or extend other packages on Github, CRAN or Bioconductor on which I often depend."><meta property="og:image" content="https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Software I&#39;ve (co-)authored | Robrecht Cannoodt</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Robrecht Cannoodt</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Robrecht Cannoodt</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/software/"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Software I&#39;ve (co-)authored</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on <a href="https://github.com/rcannood/" target="_blank" rel="noopener">github.com/rcannood</a> or <a href="https://github.com/dynverse/" target="_blank" rel="noopener">github.com/dynverse</a>. Most packages are also <a href="https://cran.rstudio.com" target="_blank" rel="noopener">on CRAN</a>.</p>
+<h2 id="analysing-single-cell-omics-data">Analysing single-cell omics data</h2>
+<ul>
+<li><a href="https://github.com/dynverse/dynbenchmark" target="_blank" rel="noopener"><strong>dynbenchmark</strong></a>: Pipeline for benchmarking trajectory inference methods</li>
+<li><a href="https://github.com/dynverse/dyndimred" target="_blank" rel="noopener"><strong>dyndimred</strong></a>: Applying dimensionality reduction methods, <a href="https://cran.r-project.org/package=dyndimred" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/dynverse/dyneval" target="_blank" rel="noopener"><strong>dyneval</strong></a>: Evaluating trajectory inference methods</li>
+<li><a href="https://github.com/dynverse/dynfeature" target="_blank" rel="noopener"><strong>dynfeature</strong></a>: Calculating feature importance scores from trajectories</li>
+<li><a href="https://github.com/dynverse/dyngen" target="_blank" rel="noopener"><strong>dyngen</strong></a>: Simulating single-cell data using gene regulatory networks</li>
+<li><a href="https://github.com/dynverse/dynguidelines" target="_blank" rel="noopener"><strong>dynguidelines</strong></a>: User guidelines for trajectory inference</li>
+<li><a href="https://github.com/dynverse/dynmethods" target="_blank" rel="noopener"><strong>dynmethods</strong></a>: A collection of wrappers for trajectory inference methods</li>
+<li><a href="https://github.com/dynverse/dyno" target="_blank" rel="noopener"><strong>dyno</strong></a>: A pipeline for inferring, visualising and interpreting trajectories</li>
+<li><a href="https://github.com/dynverse/dynparam" target="_blank" rel="noopener"><strong>dynparam</strong></a>: Creating meta-information for parameters, <a href="https://cran.r-project.org/package=dynparam" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/dynverse/dynplot" target="_blank" rel="noopener"><strong>dynplot</strong></a>: A simple visualisation library for trajectories</li>
+<li><a href="https://github.com/dynverse/dynplot2" target="_blank" rel="noopener"><strong>dynplot2</strong></a>: A fully customisable visualisation library for trajectories</li>
+<li><a href="https://github.com/dynverse/dyntoy" target="_blank" rel="noopener"><strong>dyntoy</strong></a>: Generating simple toy data of cellular differentiation</li>
+<li><a href="https://github.com/dynverse/dynutils" target="_blank" rel="noopener"><strong>dynutils</strong></a>: Common functionality for the dynverse packages, <a href="https://cran.r-project.org/package=dynutils" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/dynverse/dynwrap" target="_blank" rel="noopener"><strong>dynwrap</strong></a>: A common format for trajectories, <a href="https://cran.r-project.org/package=dynwrap" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/SCORPIUS" target="_blank" rel="noopener"><strong>SCORPIUS</strong></a>: Inferring developmental chronologies from single-cell omics, <a href="https://cran.r-project.org/package=SCORPIUS" target="_blank" rel="noopener">CRAN</a></li>
+</ul>
+<h2 id="algorithms">Algorithms</h2>
+<ul>
+<li><a href="https://github.com/rcannood/diffusionMap" target="_blank" rel="noopener"><strong>diffusionMap</strong></a>: Implements diffusion map method of data parameterization <a href="https://cran.r-project.org/package=diffusionMap" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/GillespieSSA" target="_blank" rel="noopener"><strong>GillespieSSA</strong></a>: Gillespie’s Stochastic Simulation Algorithm (SSA), <a href="https://cran.r-project.org/package=GillespieSSA" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/GillespieSSA2" target="_blank" rel="noopener"><strong>GillespieSSA2</strong></a>: Gillespie’s Stochastic Simulation Algorithm for Impatient People, <a href="https://cran.r-project.org/package=GillespieSSA2" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/gng" target="_blank" rel="noopener"><strong>gng</strong></a>: Growing Neural Gas implemented in Rcpp</li>
+<li><a href="https://github.com/rcannood/incgraph" target="_blank" rel="noopener"><strong>incgraph</strong></a>: Incremental graphlet counting for network optimisation, <a href="https://cran.r-project.org/package=incgraph" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/dynverse/lmds" target="_blank" rel="noopener"><strong>lmds</strong></a>: Landmark Multi-Dimensional Scaling, <a href="https://cran.r-project.org/package=lmds" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/princurve" target="_blank" rel="noopener"><strong>princurve</strong></a>: Fits a principal curve in arbitrary dimension, <a href="https://cran.r-project.org/package=princurve" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/koheiw/proxyC" target="_blank" rel="noopener"><strong>proxyC</strong></a>: Computes proximity in large sparse matrices, <a href="https://cran.r-project.org/package=proxyC" target="_blank" rel="noopener">CRAN</a></li>
+</ul>
+<h2 id="software-development">Software development</h2>
+<ul>
+<li><a href="https://github.com/dynverse/babelwhale" target="_blank" rel="noopener"><strong>babelwhale</strong></a>: Interacting with Docker and Singularity containers, <a href="https://cran.r-project.org/package=babelwhale" target="_blank" rel="noopener">CRAN</a></li>
+<li><a href="https://github.com/rcannood/qsub" target="_blank" rel="noopener"><strong>qsub</strong></a>: Running commands remotely on gridengine clusters, <a href="https://cran.r-project.org/package=qsub" target="_blank" rel="noopener">CRAN</a></li>
+</ul>
+<h2 id="contributions">Contributions</h2>
+<p>I also help maintain or extend other packages on Github, CRAN or Bioconductor on which I often depend.</p>
+<ul>
+<li>Optimise: <a href="https://www.bioconductor.org/packages/slingshot" target="_blank" rel="noopener">slingshot</a></li>
+<li>New functionality: <a href="https://cran.r-project.org/package=ggrepel" target="_blank" rel="noopener">ggrepel</a>, <a href="https://cran.r-project.org/package=ParamHelpers" target="_blank" rel="noopener">ParamHelpers</a>, <a href="https://cran.r-project.org/package=ranger" target="_blank" rel="noopener">ranger</a>, <a href="https://cran.r-project.org/package=rlang" target="_blank" rel="noopener">rlang</a></li>
+<li>Fixing bugs: <a href="https://cran.r-project.org/package=devtools" target="_blank" rel="noopener">devtools</a>, <a href="https://www.bioconductor.org/packages/monocle" target="_blank" rel="noopener">monocle</a>, <a href="https://cran.r-project.org/package=proxyC" target="_blank" rel="noopener">proxyC</a>, <a href="https://cran.r-project.org/package=rticles" target="_blank" rel="noopener">rticles</a>, <a href="https://cran.r-project.org/package=shadowtext" target="_blank" rel="noopener">shadowtext</a></li>
+<li>Maintaining packages: <a href="https://cran.r-project.org/package=diffusionMap" target="_blank" rel="noopener">diffusionMap</a>, <a href="https://cran.r-project.org/package=princurve" target="_blank" rel="noopener">princurve</a>, <a href="https://cran.r-project.org/package=GillespieSSA" target="_blank" rel="noopener">GillespieSSA</a></li>
+<li>Documentation: <a href="https://cran.r-project.org/package=devtools" target="_blank" rel="noopener">devtools</a>, <a href="https://cran.r-project.org/package=mlr" target="_blank" rel="noopener">mlr</a>, <a href="https://cran.r-project.org/package=remotes" target="_blank" rel="noopener">remotes</a>, <a href="https://cran.r-project.org/package=tidyverse" target="_blank" rel="noopener">tidyverse</a></li>
+<li>Fixing issues with Travis CI: <a href="https://cran.r-project.org/package=Rdimtools" target="_blank" rel="noopener">Rdimtools</a>, <a href="https://www.bioconductor.org/packages/slingshot" target="_blank" rel="noopener">slingshot</a>, <a href="https://www.bioconductor.org/packages/monocle" target="_blank" rel="noopener">monocle</a>, <a href="https://www.bioconductor.org/packages/splatter" target="_blank" rel="noopener">splatter</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://www.cannoodt.dev/software/&amp;text=Software%20I&amp;#39;ve%20%28co-%29authored" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://www.cannoodt.dev/software/&amp;t=Software%20I&amp;#39;ve%20%28co-%29authored" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Software%20I&amp;#39;ve%20%28co-%29authored&amp;body=https://www.cannoodt.dev/software/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://www.cannoodt.dev/software/&amp;title=Software%20I&amp;#39;ve%20%28co-%29authored" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Software%20I&amp;#39;ve%20%28co-%29authored%20https://www.cannoodt.dev/software/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://www.cannoodt.dev/software/&amp;title=Software%20I&amp;#39;ve%20%28co-%29authored" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Robrecht Cannoodt, 2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.1e09523f15716988ebe7dec12c579bef.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

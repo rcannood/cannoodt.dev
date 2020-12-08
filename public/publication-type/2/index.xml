@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Robrecht Cannoodt</title>
+    <link>https://www.cannoodt.dev/publication-type/2/</link>
+      <atom:link href="https://www.cannoodt.dev/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Robrecht Cannoodt, 2020</copyright><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://www.cannoodt.dev/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>TinGa: fast and flexible trajectory inference with Growing Neural Gas</title>
+      <link>https://www.cannoodt.dev/publication/2020-07-01_tinga-fast-and-flexible-trajectory/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2020-07-01_tinga-fast-and-flexible-trajectory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A scalable SCENIC workflow for single-cell gene regulatory network analysis</title>
+      <link>https://www.cannoodt.dev/publication/2020-06-19_a-scalable-scenic-workflow-for/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2020-06-19_a-scalable-scenic-workflow-for/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexible inference of both within-lineage and between-lineage differential expression.</title>
+      <link>https://www.cannoodt.dev/publication/2020-03-05_trajectorybased-differential-expression-analysis-for/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2020-03-05_trajectorybased-differential-expression-analysis-for/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Essential guidelines for computational method benchmarking</title>
+      <link>https://www.cannoodt.dev/publication/2019-06-20_essential-guidelines-for-computational-method/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2019-06-20_essential-guidelines-for-computational-method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A comparison of single-cell trajectory inference methods</title>
+      <link>https://www.cannoodt.dev/publication/2019-04-01_a-comparison-of-singlecell-trajectory/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2019-04-01_a-comparison-of-singlecell-trajectory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Inference from Single-Cell Transcriptomic Data</title>
+      <link>https://www.cannoodt.dev/publication/2018-12-13_network-inference-from-singlecell-transcriptomic/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-12-13_network-inference-from-singlecell-transcriptomic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Transcription Factor ZEB2 Is Required to Maintain the Tissue-Specific Identities of Macrophages</title>
+      <link>https://www.cannoodt.dev/publication/2018-07-31_the-transcription-factor-zeb-is/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-07-31_the-transcription-factor-zeb-is/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IncGraph: Incremental graphlet counting for topology optimisation</title>
+      <link>https://www.cannoodt.dev/publication/2018-04-26_incgraph-incremental-graphlet-counting-for/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-04-26_incgraph-incremental-graphlet-counting-for/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A comprehensive evaluation of module detection methods for gene expression data</title>
+      <link>https://www.cannoodt.dev/publication/2018-03-09_a-comprehensive-evaluation-of-module/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-03-09_a-comprehensive-evaluation-of-module/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genomic Amplifications and Distal 6q Loss: Novel Markers for Poor Survival in High-risk Neuroblastoma Patients</title>
+      <link>https://www.cannoodt.dev/publication/2018-02-02_genomic-amplifications-and-distal-q/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-02-02_genomic-amplifications-and-distal-q/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Early and late effects of pharmacological ALK inhibition on the neuroblastoma transcriptome</title>
+      <link>https://www.cannoodt.dev/publication/2017-11-14_early-and-late-effects-of/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2017-11-14_early-and-late-effects-of/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational methods for trajectory inference from single-cell transcriptomics</title>
+      <link>https://www.cannoodt.dev/publication/2016-09-28_computational-methods-for-trajectory-inference/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2016-09-28_computational-methods-for-trajectory-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arrEYE: a customized platform for high-resolution copy number analysis of coding and noncoding regions of known and candidate retinal dystrophy genes and retinal noncoding RNAs</title>
+      <link>https://www.cannoodt.dev/publication/2016-09-08_arreye-a-customized-platform-for/</link>
+      <pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2016-09-08_arreye-a-customized-platform-for/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methyl-CpG-binding domain sequencing reveals a prognostic methylation signature in neuroblastoma</title>
+      <link>https://www.cannoodt.dev/publication/2015-12-06_methylcpgbinding-domain-sequencing-reveals-a/</link>
+      <pubDate>Sun, 06 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2015-12-06_methylcpgbinding-domain-sequencing-reveals-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

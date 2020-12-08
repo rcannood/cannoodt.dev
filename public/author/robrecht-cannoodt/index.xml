@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robrecht Cannoodt</title>
+    <link>https://www.cannoodt.dev/author/robrecht-cannoodt/</link>
+      <atom:link href="https://www.cannoodt.dev/author/robrecht-cannoodt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robrecht Cannoodt</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Robrecht Cannoodt, 2020</copyright>
+    <image>
+      <url>https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Robrecht Cannoodt</title>
+      <link>https://www.cannoodt.dev/author/robrecht-cannoodt/</link>
+    </image>
+    
+  </channel>
+</rss>

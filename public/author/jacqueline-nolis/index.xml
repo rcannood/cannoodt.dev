@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jacqueline Nolis | Robrecht Cannoodt</title>
+    <link>https://www.cannoodt.dev/author/jacqueline-nolis/</link>
+      <atom:link href="https://www.cannoodt.dev/author/jacqueline-nolis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jacqueline Nolis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Robrecht Cannoodt, 2020</copyright><lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Jacqueline Nolis</title>
+      <link>https://www.cannoodt.dev/author/jacqueline-nolis/</link>
+    </image>
+    
+    <item>
+      <title>The Rockerverse: Packages and Applications for Containerization with R</title>
+      <link>https://www.cannoodt.dev/publication/2020-01-29_the-rockerverse-packages-and-applications/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2020-01-29_the-rockerverse-packages-and-applications/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

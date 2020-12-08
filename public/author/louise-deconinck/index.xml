@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Louise Deconinck | Robrecht Cannoodt</title>
+    <link>https://www.cannoodt.dev/author/louise-deconinck/</link>
+      <atom:link href="https://www.cannoodt.dev/author/louise-deconinck/index.xml" rel="self" type="application/rss+xml" />
+    <description>Louise Deconinck</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Robrecht Cannoodt, 2020</copyright><lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Louise Deconinck</title>
+      <link>https://www.cannoodt.dev/author/louise-deconinck/</link>
+    </image>
+    
+    <item>
+      <title>dyngen: a multi-modal simulator for spearheading new single-cell omics analyses</title>
+      <link>https://www.cannoodt.dev/publication/2020-02-07_dyngen-a-multimodal-simulator-for/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2020-02-07_dyngen-a-multimodal-simulator-for/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

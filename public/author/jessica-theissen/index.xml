@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jessica Theissen | Robrecht Cannoodt</title>
+    <link>https://www.cannoodt.dev/author/jessica-theissen/</link>
+      <atom:link href="https://www.cannoodt.dev/author/jessica-theissen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jessica Theissen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Robrecht Cannoodt, 2020</copyright><lastBuildDate>Fri, 02 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Jessica Theissen</title>
+      <link>https://www.cannoodt.dev/author/jessica-theissen/</link>
+    </image>
+    
+    <item>
+      <title>Genomic Amplifications and Distal 6q Loss: Novel Markers for Poor Survival in High-risk Neuroblastoma Patients</title>
+      <link>https://www.cannoodt.dev/publication/2018-02-02_genomic-amplifications-and-distal-q/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cannoodt.dev/publication/2018-02-02_genomic-amplifications-and-distal-q/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

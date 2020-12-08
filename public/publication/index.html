@@ -1,0 +1,2568 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Nelson Bighetti">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Professor of Artificial Intelligence">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://www.cannoodt.dev/publication/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.1c55e0a47f7e1b9753c5a31f7b7f455d.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143597662-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-143597662-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Robrecht Cannoodt">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://www.cannoodt.dev/publication/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@rcannood">
+  <meta property="twitter:creator" content="@rcannood">
+  
+  <meta property="og:site_name" content="Robrecht Cannoodt">
+  <meta property="og:url" content="https://www.cannoodt.dev/publication/">
+  <meta property="og:title" content="Publications | Robrecht Cannoodt">
+  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://www.cannoodt.dev/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2020-07-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Publications | Robrecht Cannoodt</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Robrecht Cannoodt</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Robrecht Cannoodt</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/software/"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1>Publications</h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+
+      
+
+      
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+
+      <div class="form-row mb-4">
+        <div class="col-auto">
+          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">Type</option>
+            
+            
+            <option value=".pubtype-2">
+              Journal article
+            </option>
+            
+            <option value=".pubtype-3">
+              Preprint
+            </option>
+            
+          </select>
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
+            <option value="*">Date</option>
+            
+            
+            
+            <option value=".year-2020">
+              2020
+            </option>
+            
+            <option value=".year-2019">
+              2019
+            </option>
+            
+            <option value=".year-2018">
+              2018
+            </option>
+            
+            <option value=".year-2017">
+              2017
+            </option>
+            
+            <option value=".year-2016">
+              2016
+            </option>
+            
+            <option value=".year-2015">
+              2015
+            </option>
+            
+            
+          </select>
+        </div>
+      </div>
+
+      <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/helena-todorov/">Helena Todorov</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2020).
+  <a href="/publication/2020-07-01_tinga-fast-and-flexible-trajectory/">TinGa: fast and flexible trajectory inference with Growing Neural Gas</a>.
+  Bioinformatics.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1093/bioinformatics/btaa463" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/bram-van-de-sande/">Bram Van de Sande</a></span>, <span ><a href="/author/christopher-flerin/">Christopher Flerin</a></span>, <span ><a href="/author/kristofer-davie/">Kristofer Davie</a></span>, <span ><a href="/author/maxime-de-waegeneer/">Maxime De Waegeneer</a></span>, <span ><a href="/author/gert-hulselmans/">Gert Hulselmans</a></span>, <span ><a href="/author/sara-aibar/">Sara Aibar</a></span>, <span ><a href="/author/ruth-seurinck/">Ruth Seurinck</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/quentin-rouchon/">Quentin Rouchon</a></span>, <span ><a href="/author/toni-verbeiren/">Toni Verbeiren</a></span>, <span ><a href="/author/dries-de-maeyer/">Dries De Maeyer</a></span>, <span ><a href="/author/joke-reumers/">Joke Reumers</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/stein-aerts/">Stein Aerts</a></span>
+  </span>
+  (2020).
+  <a href="/publication/2020-06-19_a-scalable-scenic-workflow-for/">A scalable SCENIC workflow for single-cell gene regulatory network analysis</a>.
+  Nature Protocols.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41596-020-0336-2" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/koen-van-den-berge/">Koen Van den Berge</a></span>, <span ><a href="/author/hector-roux-de-bezieux/">Hector Roux de Bézieux</a></span>, <span ><a href="/author/kelly-street/">Kelly Street</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/sandrine-dudoit/">Sandrine Dudoit</a></span>, <span ><a href="/author/lieven-clement/">Lieven Clement</a></span>
+  </span>
+  (2020).
+  <a href="/publication/2020-03-05_trajectorybased-differential-expression-analysis-for/">Flexible inference of both within-lineage and between-lineage differential expression.</a>.
+  Nature Communications.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2020-03-05_trajectorybased-differential-expression-analysis-for/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/statOmics/tradeSeq" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41467-020-14766-3" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/louise-deconinck/">Louise Deconinck</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2020).
+  <a href="/publication/2020-02-07_dyngen-a-multimodal-simulator-for/">dyngen: a multi-modal simulator for spearheading new single-cell omics analyses</a>.
+  bioRxiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://raw.githubusercontent.com/dynverse/dyngen_manuscript/master/manuscript/manuscript.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2020-02-07_dyngen-a-multimodal-simulator-for/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.github.com/dynverse/dyngen" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/2020.02.06.936971" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2020">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/daniel-nust/">Daniel Nüst</a></span>, <span ><a href="/author/dirk-eddelbuettel/">Dirk Eddelbuettel</a></span>, <span ><a href="/author/dom-bennett/">Dom Bennett</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/dav-clark/">Dav Clark</a></span>, <span ><a href="/author/gergely-daroczi/">Gergely Daroczi</a></span>, <span ><a href="/author/mark-edmondson/">Mark Edmondson</a></span>, <span ><a href="/author/colin-fay/">Colin Fay</a></span>, <span ><a href="/author/ellis-hughes/">Ellis Hughes</a></span>, <span ><a href="/author/sean-lopp/">Sean Lopp</a></span>, <span ><a href="/author/ben-marwick/">Ben Marwick</a></span>, <span ><a href="/author/heather-nolis/">Heather Nolis</a></span>, <span ><a href="/author/jacqueline-nolis/">Jacqueline Nolis</a></span>, <span ><a href="/author/hong-ooi/">Hong Ooi</a></span>, <span ><a href="/author/karthik-ram/">Karthik Ram</a></span>, <span ><a href="/author/noam-ross/">Noam Ross</a></span>, <span ><a href="/author/lori-shepherd/">Lori Shepherd</a></span>, <span ><a href="/author/nitesh-turaga/">Nitesh Turaga</a></span>, <span ><a href="/author/craig-willis/">Craig Willis</a></span>, <span ><a href="/author/nan-xiao/">Nan Xiao</a></span>, <span ><a href="/author/charlotte-van-petegem/">Charlotte Van Petegem</a></span>
+  </span>
+  (2020).
+  <a href="/publication/2020-01-29_the-rockerverse-packages-and-applications/">The Rockerverse: Packages and Applications for Containerization with R</a>.
+  arXiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2001.10641" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2020-01-29_the-rockerverse-packages-and-applications/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2001.10641" target="_blank" rel="noopener">
+    
+    arXiv
+  </a>
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/lucia-lorenzi/">Lucia Lorenzi*</a></span>, <span ><a href="/author/hua-sheng-chiu/">Hua-Sheng Chiu*</a></span>, <span ><a href="/author/francisco-avila-cobos/">Francisco Avila Cobos</a></span>, <span ><a href="/author/stephen-gross/">Stephen Gross</a></span>, <span ><a href="/author/pieter-jan-volders/">Pieter-Jan Volders</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/justine-nuytens/">Justine Nuytens</a></span>, <span ><a href="/author/katrien-vanderheyden/">Katrien Vanderheyden</a></span>, <span ><a href="/author/jasper-anckaert/">Jasper Anckaert</a></span>, <span ><a href="/author/steve-lefever/">Steve Lefever</a></span>, <span ><a href="/author/tine-goovaerts/">Tine Goovaerts</a></span>, <span ><a href="/author/thomas-birkballe-hansen/">Thomas Birkballe Hansen</a></span>, <span ><a href="/author/scott-kuersten/">Scott Kuersten</a></span>, <span ><a href="/author/nele-nijs/">Nele Nijs</a></span>, <span ><a href="/author/tom-taghon/">Tom Taghon</a></span>, <span ><a href="/author/karim-vermaelen/">Karim Vermaelen</a></span>, <span ><a href="/author/ken-r.-bracke/">Ken R. Bracke</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/tim-de-meyer/">Tim De Meyer</a></span>, <span ><a href="/author/nandan-deshpande/">Nandan Deshpande</a></span>, <span ><a href="/author/govardhan-anande/">Govardhan Anande</a></span>, <span ><a href="/author/ting-wen-chen/">Ting-Wen Chen</a></span>, <span ><a href="/author/marc-r.-wilkins/">Marc R. Wilkins</a></span>, <span ><a href="/author/ashwin-unnikrishnan/">Ashwin Unnikrishnan</a></span>, <span ><a href="/author/katleen-de-preter/">Katleen De Preter</a></span>, <span ><a href="/author/j%C3%B8rgen-kjems/">Jørgen Kjems</a></span>, <span ><a href="/author/jan-koster/">Jan Koster</a></span>, <span ><a href="/author/gary-p.-schroth/">Gary P. Schroth</a></span>, <span ><a href="/author/jo-vandesompele/">Jo Vandesompele</a></span>, <span ><a href="/author/pavel-sumazin/">Pavel Sumazin</a></span>, <span ><a href="/author/pieter-mestdagh/">Pieter Mestdagh</a></span>
+  </span>
+  (2019).
+  <a href="/publication/2019-10-18_the-rna-atlas-a-single/">The RNA Atlas, a single nucleotide resolution map of the human transcriptome</a>.
+  bioRxiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/biorxiv/early/2019/10/17/807529.full-text.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2019-10-18_the-rna-atlas-a-single/cite.bib">
+  Cite
+</button>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE138734" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/807529" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&amp;dscope=RNAATLAS&amp;option=about_dscope" target="_blank" rel="noopener">
+    
+    Data Viewer
+  </a>
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/lukas-m.-weber/">Lukas M. Weber</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/charlotte-soneson/">Charlotte Soneson</a></span>, <span ><a href="/author/alexander-hapfelmeier/">Alexander Hapfelmeier</a></span>, <span ><a href="/author/paul-p.-gardner/">Paul P. Gardner</a></span>, <span ><a href="/author/anne-laure-boulesteix/">Anne-Laure Boulesteix</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/mark-d.-robinson/">Mark D. Robinson</a></span>
+  </span>
+  (2019).
+  <a href="/publication/2019-06-20_essential-guidelines-for-computational-method/">Essential guidelines for computational method benchmarking</a>.
+  Genome Biology.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-019-1738-8" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2019-06-20_essential-guidelines-for-computational-method/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1186/s13059-019-1738-8" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/koen-van-den-berge/">Koen Van den Berge</a></span>, <span ><a href="/author/hector-roux-de-bezieux/">Hector Roux de Bézieux</a></span>, <span ><a href="/author/kelly-street/">Kelly Street</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/sandrine-dudoit/">Sandrine Dudoit</a></span>, <span ><a href="/author/lieven-clement/">Lieven Clement</a></span>
+  </span>
+  (2019).
+  <a href="/publication/2019-05-02_trajectorybased-differential-expression-analysis-for/">Trajectory-based differential expression analysis for single-cell sequencing data</a>.
+  bioRxiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/biorxiv/early/2019/05/02/623397.full-text.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2019-05-02_trajectorybased-differential-expression-analysis-for/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/statOmics/tradeSeq" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/623397" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2019">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/helena-todorov/">Helena Todorov</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2019).
+  <a href="/publication/2019-04-01_a-comparison-of-singlecell-trajectory/">A comparison of single-cell trajectory inference methods</a>.
+  Nature Biotechnology.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2019-04-01_a-comparison-of-singlecell-trajectory/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/dynverse/dynbenchmark" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.5281/zenodo.1443566" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41587-019-0071-9" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/helena-todorov/">Helena Todorov</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-12-13_network-inference-from-singlecell-transcriptomic/">Network Inference from Single-Cell Transcriptomic Data</a>.
+  Methods in Molecular Biology.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-12-13_network-inference-from-singlecell-transcriptomic/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1007/978-1-4939-8882-2_10" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/charlotte-l.-scott/">Charlotte L. Scott</a></span>, <span ><a href="/author/wouter-tjonck/">Wouter T’Jonck</a></span>, <span ><a href="/author/liesbet-martens/">Liesbet Martens</a></span>, <span ><a href="/author/helena-todorov/">Helena Todorov</a></span>, <span ><a href="/author/dorine-sichien/">Dorine Sichien</a></span>, <span ><a href="/author/bieke-soen/">Bieke Soen</a></span>, <span ><a href="/author/johnny-bonnardel/">Johnny Bonnardel</a></span>, <span ><a href="/author/sofie-de-prijck/">Sofie De Prijck</a></span>, <span ><a href="/author/niels-vandamme/">Niels Vandamme</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/bavo-vanneste/">Bavo Vanneste</a></span>, <span ><a href="/author/wendy-toussaint/">Wendy Toussaint</a></span>, <span ><a href="/author/pieter-de-bleser/">Pieter De Bleser</a></span>, <span ><a href="/author/nozomi-takahashi/">Nozomi Takahashi</a></span>, <span ><a href="/author/peter-vandenabeele/">Peter Vandenabeele</a></span>, <span ><a href="/author/sandrine-henri/">Sandrine Henri</a></span>, <span ><a href="/author/clare-pridans/">Clare Pridans</a></span>, <span ><a href="/author/david-a.-hume/">David A. Hume</a></span>, <span ><a href="/author/bart-n.-lambrecht/">Bart N. Lambrecht</a></span>, <span ><a href="/author/patrick-de-baetselier/">Patrick De Baetselier</a></span>, <span ><a href="/author/simon-w.f.-milling/">Simon W.F. Milling</a></span>, <span ><a href="/author/jo-a.-van-ginderachter/">Jo A. Van Ginderachter</a></span>, <span ><a href="/author/bernard-malissen/">Bernard Malissen</a></span>, <span ><a href="/author/geert-berx/">Geert Berx</a></span>, <span ><a href="/author/alain-beschin/">Alain Beschin</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>, <span ><a href="/author/martin-guilliams/">Martin Guilliams</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-07-31_the-transcription-factor-zeb-is/">The Transcription Factor ZEB2 Is Required to Maintain the Tissue-Specific Identities of Macrophages</a>.
+  Immunity.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/ZEB2%20is%20highly%20expressed%20across%20the%20macrophage%20lineage" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-07-31_the-transcription-factor-zeb-is/cite.bib">
+  Cite
+</button>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117081" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1016/j.immuni.2018.07.004" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/joeri-ruyssinck/">Joeri Ruyssinck</a></span>, <span ><a href="/author/jan-ramon/">Jan Ramon</a></span>, <span ><a href="/author/katleen-de-preter/">Katleen De Preter</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-04-26_incgraph-incremental-graphlet-counting-for/">IncGraph: Incremental graphlet counting for topology optimisation</a>.
+  PLOS ONE.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/IncGraph%20is%20a%20method%20for%20calculating%20the%20differences%20in%20graphlet%20counts%20with%20respect%20to%20the%20network%20in%20its%20previous%20state" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-04-26_incgraph-incremental-graphlet-counting-for/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/rcannood/incgraph" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1371/journal.pone.0195997" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-03-09_a-comprehensive-evaluation-of-module/">A comprehensive evaluation of module detection methods for gene expression data</a>.
+  Nature Communications.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.nature.com/articles/s41467-018-03424-4.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-03-09_a-comprehensive-evaluation-of-module/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.github.com/saeyslab/moduledetection-evaluation" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41467-018-03424-4" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/helena-todorov/">Helena Todorov</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-03-06_a-comparison-of-singlecell-trajectory/">A comparison of single-cell trajectory inference methods: towards more accurate and robust tools</a>.
+  bioRxiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/biorxiv/early/2018/03/05/276907.full-text.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-03-06_a-comparison-of-singlecell-trajectory/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/dynverse/dynbenchmark" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.5281/zenodo.1443566" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/276907" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/pauline-depuydt/">Pauline Depuydt*</a></span>, <span ><a href="/author/valentina-boeva/">Valentina Boeva*</a></span>, <span ><a href="/author/toby-d-hocking/">Toby D Hocking</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/inge-m-ambros/">Inge M Ambros</a></span>, <span ><a href="/author/peter-f-ambros/">Peter F Ambros</a></span>, <span ><a href="/author/shahab-asgharzadeh/">Shahab Asgharzadeh</a></span>, <span ><a href="/author/edward-f-attiyeh/">Edward F Attiyeh</a></span>, <span ><a href="/author/valerie-combaret/">Valérie Combaret</a></span>, <span ><a href="/author/raffaella-defferrari/">Raffaella Defferrari</a></span>, <span ><a href="/author/matthias-fischer/">Matthias Fischer</a></span>, <span ><a href="/author/barbara-hero/">Barbara Hero</a></span>, <span ><a href="/author/michael-d-hogarty/">Michael D Hogarty</a></span>, <span ><a href="/author/meredith-s-irwin/">Meredith S Irwin</a></span>, <span ><a href="/author/jan-koster/">Jan Koster</a></span>, <span ><a href="/author/susan-kreissman/">Susan Kreissman</a></span>, <span ><a href="/author/ruth-ladenstein/">Ruth Ladenstein</a></span>, <span ><a href="/author/eve-lapouble/">Eve Lapouble</a></span>, <span ><a href="/author/genevieve-laureys/">Geneviève Laureys</a></span>, <span ><a href="/author/wendy-b-london/">Wendy B London</a></span>, <span ><a href="/author/katia-mazzocco/">Katia Mazzocco</a></span>, <span ><a href="/author/akira-nakagawara/">Akira Nakagawara</a></span>, <span ><a href="/author/rosa-noguera/">Rosa Noguera</a></span>, <span ><a href="/author/miki-ohira/">Miki Ohira</a></span>, <span ><a href="/author/julie-r-park/">Julie R Park</a></span>, <span ><a href="/author/ulrike-potschger/">Ulrike Pötschger</a></span>, <span ><a href="/author/jessica-theissen/">Jessica Theissen</a></span>, <span ><a href="/author/gian-paolo-tonini/">Gian Paolo Tonini</a></span>, <span ><a href="/author/dominique-valteau-couanet/">Dominique Valteau-Couanet</a></span>, <span ><a href="/author/luigi-varesio/">Luigi Varesio</a></span>, <span ><a href="/author/rogier-versteeg/">Rogier Versteeg</a></span>, <span ><a href="/author/frank-speleman/">Frank Speleman</a></span>, <span ><a href="/author/john-m-maris/">John M Maris</a></span>, <span ><a href="/author/gudrun-schleiermachersup/sup/">Gudrun Schleiermacher&lt;sup&gt;†&lt;/sup&gt;</a></span>, <span ><a href="/author/katleen-de-pretersup/sup/">Katleen De Preter&lt;sup&gt;†&lt;/sup&gt;</a></span>
+  </span>
+  (2018).
+  <a href="/publication/2018-02-02_genomic-amplifications-and-distal-q/">Genomic Amplifications and Distal 6q Loss: Novel Markers for Poor Survival in High-risk Neuroblastoma Patients</a>.
+  JNCI: Journal of the National Cancer Institute.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://academic.oup.com/jnci/article-pdf/110/10/1084/26692395/djy022.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2018-02-02_genomic-amplifications-and-distal-q/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1093/jnci/djy022" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2017">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/shana-claeys/">Shana Claeys</a></span>, <span ><a href="/author/geertrui-denecker/">Geertrui Denecker</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/candy-kumps/">Candy Kumps</a></span>, <span ><a href="/author/kaat-durinck/">Kaat Durinck</a></span>, <span ><a href="/author/frank-speleman/">Frank Speleman</a></span>, <span ><a href="/author/katleen-de-preter/">Katleen De Preter</a></span>
+  </span>
+  (2017).
+  <a href="/publication/2017-11-14_early-and-late-effects-of/">Early and late effects of pharmacological ALK inhibition on the neuroblastoma transcriptome</a>.
+  Oncotarget.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.oncotarget.com/index.php?journal=oncotarget&amp;page=article&amp;op=download&amp;path%5B%5D=22423&amp;path%5B%5D=70913" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2017-11-14_early-and-late-effects-of/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.18632/oncotarget.22423" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/dorine-sichien/">Dorine Sichien</a></span>, <span ><a href="/author/simon-tavernier/">Simon Tavernier</a></span>, <span ><a href="/author/sophie-janssens/">Sophie Janssens</a></span>, <span ><a href="/author/martin-guilliams/">Martin Guilliams</a></span>, <span ><a href="/author/bart-lambrecht/">Bart Lambrecht</a></span>, <span ><a href="/author/katleen-de-preter/">Katleen De Preter</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2016).
+  <a href="/publication/2016-10-07_scorpius-improves-trajectory-inference-and/">SCORPIUS improves trajectory inference and identifies novel modules in dendritic cell development</a>.
+  bioRxiv.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/biorxiv/early/2016/10/07/079509.full-text.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2016-10-07_scorpius-improves-trajectory-inference-and/cite.bib">
+  Cite
+</button>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/rcannood/SCORPIUS" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/079509" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/wouter-saelens/">Wouter Saelens*</a></span>, <span ><a href="/author/yvan-saeys/">Yvan Saeys</a></span>
+  </span>
+  (2016).
+  <a href="/publication/2016-09-28_computational-methods-for-trajectory-inference/">Computational methods for trajectory inference from single-cell transcriptomics</a>.
+  European Journal of Immunology.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/eji.201646347" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2016-09-28_computational-methods-for-trajectory-inference/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1002/eji.201646347" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2016">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/caroline-van-cauwenbergh/">Caroline Van Cauwenbergh</a></span>, <span ><a href="/author/kristof-van-schil/">Kristof Van Schil</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/miriam-bauwens/">Miriam Bauwens</a></span>, <span ><a href="/author/thalia-van-laethem/">Thalia Van Laethem</a></span>, <span ><a href="/author/sarah-de-jaegere/">Sarah De Jaegere</a></span>, <span ><a href="/author/wouter-steyaert/">Wouter Steyaert</a></span>, <span ><a href="/author/tom-sante/">Tom Sante</a></span>, <span ><a href="/author/bjorn-menten/">Björn Menten</a></span>, <span ><a href="/author/bart-p.-leroy/">Bart P. Leroy</a></span>, <span ><a href="/author/frauke-coppieters/">Frauke Coppieters</a></span>, <span ><a href="/author/elfride-de-baere/">Elfride De Baere</a></span>
+  </span>
+  (2016).
+  <a href="/publication/2016-09-08_arreye-a-customized-platform-for/">arrEYE: a customized platform for high-resolution copy number analysis of coding and noncoding regions of known and candidate retinal dystrophy genes and retinal noncoding RNAs</a>.
+  Genetics in Medicine.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.nature.com/articles/gim2016119.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2016-09-08_arreye-a-customized-platform-for/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/gim.2016.119" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2015">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/anneleen-decock/">Anneleen Decock</a></span>, <span ><a href="/author/mate-ongenaert/">Maté Ongenaert</a></span>, <span ><a href="/author/brobrecht-cannoodt/b/">&lt;b&gt;Robrecht Cannoodt&lt;/b&gt;</a></span>, <span ><a href="/author/kimberly-verniers/">Kimberly Verniers</a></span>, <span ><a href="/author/bram-de-wilde/">Bram De Wilde</a></span>, <span ><a href="/author/genevieve-laureys/">Geneviève Laureys</a></span>, <span ><a href="/author/nadine-van-roy/">Nadine Van Roy</a></span>, <span ><a href="/author/ana-p.-berbegall/">Ana P. Berbegall</a></span>, <span ><a href="/author/julie-bienertova-vasku/">Julie Bienertova-Vasku</a></span>, <span ><a href="/author/nick-bown/">Nick Bown</a></span>, <span ><a href="/author/nathalie-clement/">Nathalie Clément</a></span>, <span ><a href="/author/valerie-combaret/">Valérie Combaret</a></span>, <span ><a href="/author/michelle-haber/">Michelle Haber</a></span>, <span ><a href="/author/claire-hoyoux/">Claire Hoyoux</a></span>, <span ><a href="/author/jayne-murray/">Jayne Murray</a></span>, <span ><a href="/author/rosa-noguera/">Rosa Noguera</a></span>, <span ><a href="/author/gaelle-pierron/">Gaelle Pierron</a></span>, <span ><a href="/author/gudrun-schleiermacher/">Gudrun Schleiermacher</a></span>, <span ><a href="/author/johannes-h.-schulte/">Johannes H. Schulte</a></span>, <span ><a href="/author/ray-l.-stallings/">Ray L. Stallings</a></span>, <span ><a href="/author/deborah-a.-tweddle/">Deborah A. Tweddle</a></span>, <span ><a href="/author/for-the-childrens-cancer-and-leukaemi-group/">for the Children’s Cancer and Leukaemi Group</a></span>, <span ><a href="/author/katleen-de-preter/">Katleen De Preter</a></span>, <span ><a href="/author/frank-speleman/">Frank Speleman</a></span>, <span ><a href="/author/jo-vandesompele/">Jo Vandesompele</a></span>
+  </span>
+  (2015).
+  <a href="/publication/2015-12-06_methylcpgbinding-domain-sequencing-reveals-a/">Methyl-CpG-binding domain sequencing reveals a prognostic methylation signature in neuroblastoma</a>.
+  Oncotarget.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.oncotarget.com/index.php?journal=oncotarget&amp;page=article&amp;op=download&amp;path%5B%5D=6477&amp;path%5B%5D=17886" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/2015-12-06_methylcpgbinding-domain-sequencing-reveals-a/cite.bib">
+  Cite
+</button>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE69243" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.18632/oncotarget.6477" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+          
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Robrecht Cannoodt, 2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.1e09523f15716988ebe7dec12c579bef.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
