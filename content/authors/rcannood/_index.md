@@ -29,7 +29,7 @@ organizations:
   url: "http://www.data-intuitive.com"
 - name: IRC VIB
   url: "https://www.irc.ugent.be"
-role: Data Science Consultant
+role: Data Science Engineer
 social:
 # - icon: envelope
 #   icon_pack: fas
