@@ -4,7 +4,7 @@ authors:
 - Daniel Nüst
 - Dirk Eddelbuettel
 - Dom Bennett
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Dav Clark
 - Gergely Daroczi
 - Mark Edmondson

@@ -23,15 +23,17 @@ interests:
 - Software Engineering
 - Bioinformatics
 - Single-Cell Omics
-name: Robrecht Cannoodt
+title: Robrecht Cannoodt
 organizations:
 - name: Data Intuitive
   url: "http://www.data-intuitive.com"
-role: Data Science Consultant
+- name: IRC VIB
+  url: "https://www.irc.ugent.be"
+role: Data Science Engineer
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
+# - icon: envelope
+#   icon_pack: fas
+#   link: '#contact'
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3641-729X

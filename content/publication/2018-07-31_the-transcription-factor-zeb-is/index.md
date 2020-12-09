@@ -10,7 +10,7 @@ authors:
 - Johnny Bonnardel
 - Sofie De Prijck
 - Niels Vandamme
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Wouter Saelens
 - Bavo Vanneste
 - Wendy Toussaint

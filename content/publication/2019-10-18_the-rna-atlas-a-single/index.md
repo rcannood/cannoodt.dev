@@ -1,12 +1,12 @@
 ---
 abstract: The human transcriptome consists of various RNA biotypes including multiple types of non-coding RNAs (ncRNAs). Current ncRNA compendia remain incomplete partially because they are almost exclusively derived from the interrogation of small- and polyadenylated RNAs. Here, we present a more comprehensive atlas of the human transcriptome that is derived from matching polyA-, total-, and small-RNA profiles of a heterogeneous collection of nearly 300 human tissues and cell lines. We report on thousands of novel RNA species across all major RNA biotypes, including a hitherto poorly-cataloged class of non-polyadenylated single-exon long non-coding RNAs. In addition, we exploit intron abundance estimates from total RNA-sequencing to test and verify functional regulation by novel non-coding RNAs. Our study represents a substantial expansion of the current catalogue of human ncRNAs and their regulatory interactions. All data, analyses, and results are available in the R2 web portal and serve as a basis to further explore RNA biology and function.
 authors:
-- Lucia Lorenzi*
-- Hua-Sheng Chiu*
+- Lucia Lorenzi
+- Hua-Sheng Chiu
 - Francisco Avila Cobos
 - Stephen Gross
 - Pieter-Jan Volders 
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Justine Nuytens
 - Katrien Vanderheyden
 - Jasper Anckaert
@@ -32,6 +32,9 @@ authors:
 - Jo Vandesompele
 - Pavel Sumazin
 - Pieter Mestdagh
+author_notes:
+- Equal contribution
+- Equal contribution
 date: "2019-10-17T00:00:00Z"
 doi: "10.1101/807529"
 featured: false
@@ -63,10 +66,3 @@ url_pdf: https://www.biorxiv.org/content/biorxiv/early/2019/10/17/807529.full-te
 #url_video: '#'
 ---
 
-<!--
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
--->

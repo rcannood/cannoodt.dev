@@ -3,7 +3,7 @@ abstract: In computational biology and other sciences, researchers are frequentl
 authors:
 - Lukas M. Weber
 - Wouter Saelens
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Charlotte Soneson
 - Alexander Hapfelmeier
 - Paul P. Gardner

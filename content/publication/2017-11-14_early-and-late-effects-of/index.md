@@ -3,7 +3,7 @@ abstract: Neuroblastoma is an aggressive childhood malignancy of the sympathetic
 authors:
 - Shana Claeys
 - Geertrui Denecker
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Candy Kumps
 - Kaat Durinck
 - Frank Speleman

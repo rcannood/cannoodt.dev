@@ -11,6 +11,9 @@ image:
 bibliography: references.bib
 ---
 
+<script src="index_files/header-attrs/header-attrs.js"></script>
+<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index_files/anchor-sections/anchor-sections.js"></script>
 
 
 <p>Multi-dimensional scaling (MDS) <span class="citation">(Kruskal 1964)</span> is a dimensionality reduction
@@ -22,8 +25,8 @@ Landmark MDS (LMDS) <span class="citation">(de Silva and Tenenbaum 2004)</span>.
 and all other data points, thereby sacrificing determinism for scalability.</p>
 <div id="regular-mds" class="section level2">
 <h2>Regular MDS</h2>
-<p>A single-cell transcriptomics dataset <span class="citation">(<span class="citeproc-not-found" data-reference-id="treutlein_dissectingdirectreprogramming_2016"><strong>???</strong></span>)</span> is used to demonstrate (L)MDS,
-containing 392 profiles which measure the abundance levels of 2000 differentmolecules within individual cells.
+<p>A single-cell transcriptomics dataset <span class="citation">(Treutlein et al. 2016)</span> is used to demonstrate (L)MDS,
+containing 392 profiles which measure the abundance levels of 2000 different molecules within individual cells.
 Note that while the dataset is thus only a 392×2000 matrix, LMDS is designed to scale to much higher dimensionality, as demonstrated in the last section.</p>
 <p>Simply looking at the raw expression values as a heatmap reveals little to no information:</p>
 <pre class="r"><code>library(tidyverse)
@@ -39,7 +42,7 @@ pheatmap::pheatmap(
   show_rownames = FALSE,
   annotation_col = cell_info
 )</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/heatmap-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/heatmap-1.png" width="672" /></p>
 <p>Applying MDS quickly reveals the underlying bifurcating topology of the dataset
 (from MEF to myocytes and neurons).</p>
 <pre class="r"><code># compute distance matrix
@@ -54,7 +57,7 @@ dimred_mds &lt;- cmdscale(dist)
 qplot(dimred_mds[,1], dimred_mds[,2], colour = dataset$grouping) +
   theme_bw() +
   labs(x = &quot;Comp 1&quot;, y = &quot;Comp 2&quot;, colour = &quot;Group&quot;)</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/mds-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/mds-1.png" width="672" /></p>
 <p>Regular MDS, however, requires computing all pairwise distances between data points.
 This dataset only contains 392 data points, but for datasets
 it is increasingly infeasible to apply MDS.</p>
@@ -86,7 +89,7 @@ dimred_lmds &lt;- cmdscale_landmarks(dist_landmarks)
 qplot(dimred_lmds[,1], dimred_lmds[,2], colour = dataset$grouping) +
   theme_bw() +
   labs(x = &quot;Comp 1&quot;, y = &quot;Comp 2&quot;, colour = &quot;Group&quot;)</code></pre>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/lmds_dist-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/lmds_dist-1.png" width="672" /></p>
 <p>Most frequently, these two steps can be applied together as follows:</p>
 <pre class="r"><code>dimred_lmds2 &lt;- lmds(
   dataset$expression,
@@ -98,7 +101,7 @@ qplot(dimred_lmds[,1], dimred_lmds[,2], colour = dataset$grouping) +
 <h2>Execution time</h2>
 <p>In the figure below, the execution times of MDS and LMDS are compared by increasing
 the size of a random dataset until the execution of either algorithms exceeds 10 seconds.</p>
-<p><img src="/post/2019-11-13_lmds-release/index_files/figure-html/timings-1.png" width="672" /></p>
+<p><img src="index_files/figure-html/timings-1.png" width="672" /></p>
 </div>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
@@ -110,12 +113,15 @@ If you encounter any issues, feel free to let me know by creating an
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
-<div id="refs" class="references">
+<div id="refs" class="references hanging-indent">
 <div id="ref-de_silva_sparse_2004">
 <p>de Silva, Vin, and Joshua B Tenenbaum. 2004. “Sparse Multidimensional Scaling Using Landmark Points.” <em>Technical Report, Stanford University</em>, 41.</p>
 </div>
 <div id="ref-kruskal_multidimensional_1964">
 <p>Kruskal, J. B. 1964. “Multidimensional Scaling by Optimizing Goodness of Fit to a Nonmetric Hypothesis.” <em>Psychometrika</em> 29 (1): 1–27. <a href="https://doi.org/10.1007/BF02289565">https://doi.org/10.1007/BF02289565</a>.</p>
+</div>
+<div id="ref-treutlein_dissectingdirectreprogramming_2016">
+<p>Treutlein, Barbara, Qian Yi Lee, J Gray Camp, Moritz Mall, Winston Koh, Seyed Ali Mohammad Shariati, Sopheak Sim, et al. 2016. “Dissecting Direct Reprogramming from Fibroblast to Neuron Using Single-Cell RNA-Seq.” <em>Nature</em> 534 (7607): 391–95.</p>
 </div>
 </div>
 </div>

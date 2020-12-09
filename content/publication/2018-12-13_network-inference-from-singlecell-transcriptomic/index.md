@@ -2,7 +2,7 @@
 abstract: Recent technological breakthroughs in single-cell RNA sequencing are revolutionizing modern experimental design in biology. The increasing size of the single-cell expression data from which networks can be inferred allows identifying more complex, non-linear dependencies between genes. Moreover, the inter-cellular variability that is observed in single-cell expression data can be used to infer not only one global network representing all the cells, but also numerous regulatory networks that are more specific to certain conditions. By experimentally perturbing certain genes, the deconvolution of the true contribution of these genes can also be greatly facilitated. In this chapter, we will therefore tackle the advantages of single-cell transcriptomic data and show how new methods exploit this novel data type to enhance the inference of gene regulatory networks.
 authors:
 - Helena Todorov
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Wouter Saelens
 - Yvan Saeys
 date: "2018-12-14T00:00:00Z"

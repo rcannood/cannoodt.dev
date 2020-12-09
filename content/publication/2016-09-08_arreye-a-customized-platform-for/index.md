@@ -3,7 +3,7 @@ abstract: "Our goal was to design a customized microarray, arrEYE, for high-reso
 authors:
 - Caroline Van Cauwenbergh
 - Kristof Van Schil
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Miriam Bauwens
 - Thalia Van Laethem
 - Sarah De Jaegere

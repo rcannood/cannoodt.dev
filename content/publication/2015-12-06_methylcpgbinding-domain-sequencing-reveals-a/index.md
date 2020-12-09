@@ -3,7 +3,7 @@ abstract: Accurate assessment of neuroblastoma outcome prediction remains challe
 authors:
 - Anneleen Decock
 - Maté Ongenaert
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Kimberly Verniers
 - Bram De Wilde
 - Geneviève Laureys

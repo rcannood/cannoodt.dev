@@ -5,7 +5,7 @@ authors:
 - Hector Roux de Bézieux
 - Kelly Street
 - Wouter Saelens
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Yvan Saeys
 - Sandrine Dudoit
 - Lieven Clement
