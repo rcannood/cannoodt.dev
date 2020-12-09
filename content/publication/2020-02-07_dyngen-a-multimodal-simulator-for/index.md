@@ -1,10 +1,13 @@
 ---
 abstract: 'When developing new types of tools for single-cell analyses, there is often a lack of datasets on which to quantitatively assess the performance. We developed dyngen, a multi-modality simulator of single cells. In dyngen, the biomolecular state of an in silico changes over time according to a predefined gene regulatory network. We used dyngen to benchmark three emerging ways of analysing single-cell data: RNA velocity, cell-specific network inference and trajectory alignment methods. dyngen lays the foundations for benchmarking a wide variety of computational single-cell tools and can be used to help kick-start the development of future types of analyses.'
 authors:
-- <b>Robrecht Cannoodt</b>*
-- Wouter Saelens*
+- rcannood
+- Wouter Saelens
 - Louise Deconinck
 - Yvan Saeys
+author_notes:
+- Equal contribution
+- Equal contribution
 date: "2020-02-07T00:00:00Z"
 doi: 10.1101/2020.02.06.936971
 featured: false

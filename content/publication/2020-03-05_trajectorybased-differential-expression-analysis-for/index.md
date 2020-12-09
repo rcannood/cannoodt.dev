@@ -5,7 +5,7 @@ authors:
 - Hector Roux de Bézieux
 - Kelly Street
 - Wouter Saelens
-- <b>Robrecht Cannoodt</b>
+- rcannood
 - Yvan Saeys
 - Sandrine Dudoit
 - Lieven Clement
@@ -23,7 +23,7 @@ publication_types:
 - '2'
 publishDate: '2020-03-05T00:00:00Z'
 # slides: example
-summary: SUMMARY
+summary: Discover genes associated with dynamic biological processes.
 # tags:
 # - Example Tag
 title: 'Flexible inference of both within-lineage and between-lineage differential expression.'

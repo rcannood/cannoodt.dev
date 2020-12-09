@@ -1,10 +1,13 @@
 ---
 abstract: In computational biology and other sciences, researchers are frequently faced with a choice between several computational methods for performing data analyses. Benchmarking studies aim to rigorously compare the performance of different methods using well-characterized benchmark datasets, to determine the strengths of each method or to provide recommendations regarding suitable choices of methods for an analysis. However, benchmarking studies must be carefully designed and implemented to provide accurate, unbiased, and informative results. Here, we summarize key practical guidelines and recommendations for performing high-quality benchmarking analyses, based on our experiences in computational biology.
 authors:
-- Wouter Saelens*
-- <b>Robrecht Cannoodt</b>*
+- Wouter Saelens
+- rcannood
 - Helena Todorov
 - Yvan Saeys
+author_notes:
+- Equal contribution
+- Equal contribution
 date: "2019-04-01T00:00:00Z"
 doi: "10.1038/s41587-019-0071-9"
 featured: true
