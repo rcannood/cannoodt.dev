@@ -3,15 +3,16 @@
 title: "Software I've (co-)authored"
 --- 
 
-This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on [github.com/rcannood](https://github.com/rcannood/) or [github.com/dynverse](https://github.com/dynverse/). Most packages are also [on CRAN](https://cran.rstudio.com).
+This page provides links to R packages I have (co-)authored. The most recent versions of most packages are on [github.com/rcannood](https://github.com/rcannood/), [github.com/dynverse](https://github.com/dynverse/) and [github.com/data-intuitive](https://github.com/data-intuitive/). Most packages are also [on CRAN](https://cran.rstudio.com).
 
 ## Analysing single-cell omics data
 
+* [**anndata** for R](https://github.com/rcannood/anndata): Annotated Data in R, [CRAN](https://cran.r-project.org/package=anndata)
 * [**dynbenchmark**](https://github.com/dynverse/dynbenchmark): Pipeline for benchmarking trajectory inference methods
 * [**dyndimred**](https://github.com/dynverse/dyndimred): Applying dimensionality reduction methods, [CRAN](https://cran.r-project.org/package=dyndimred)
 * [**dyneval**](https://github.com/dynverse/dyneval): Evaluating trajectory inference methods
 * [**dynfeature**](https://github.com/dynverse/dynfeature): Calculating feature importance scores from trajectories
-* [**dyngen**](https://github.com/dynverse/dyngen): Simulating single-cell data using gene regulatory networks
+* [**dyngen**](https://github.com/dynverse/dyngen): Simulating single-cell data using gene regulatory networks, [CRAN](https://cran.r-project.org/package=dyngen)
 * [**dynguidelines**](https://github.com/dynverse/dynguidelines): User guidelines for trajectory inference
 * [**dynmethods**](https://github.com/dynverse/dynmethods): A collection of wrappers for trajectory inference methods
 * [**dyno**](https://github.com/dynverse/dyno): A pipeline for inferring, visualising and interpreting trajectories
@@ -39,13 +40,14 @@ This page provides links to R packages I have (co-)authored. The most recent ver
 
 * [**babelwhale**](https://github.com/dynverse/babelwhale): Interacting with Docker and Singularity containers, [CRAN](https://cran.r-project.org/package=babelwhale)
 * [**qsub**](https://github.com/rcannood/qsub): Running commands remotely on gridengine clusters, [CRAN](https://cran.r-project.org/package=qsub)
+* [**randpy**](https://github.com/data-intuitive/randpy): versioned R and Python Docker containers, [Docker Hub](https://hub.docker.com/r/dataintuitive/randpy)
 
 ## Contributions
 I also help maintain or extend other packages on Github, CRAN or Bioconductor on which I often depend.
 
-* Optimise: [slingshot](https://www.bioconductor.org/packages/slingshot)
-* New functionality: [ggrepel](https://cran.r-project.org/package=ggrepel), [ParamHelpers](https://cran.r-project.org/package=ParamHelpers), [ranger](https://cran.r-project.org/package=ranger), [rlang](https://cran.r-project.org/package=rlang)
-* Fixing bugs: [devtools](https://cran.r-project.org/package=devtools), [monocle](https://www.bioconductor.org/packages/monocle), [proxyC](https://cran.r-project.org/package=proxyC), [rticles](https://cran.r-project.org/package=rticles), [shadowtext](https://cran.r-project.org/package=shadowtext)
-* Maintaining packages: [diffusionMap](https://cran.r-project.org/package=diffusionMap), [princurve](https://cran.r-project.org/package=princurve), [GillespieSSA](https://cran.r-project.org/package=GillespieSSA)
-* Documentation: [devtools](https://cran.r-project.org/package=devtools), [mlr](https://cran.r-project.org/package=mlr), [remotes](https://cran.r-project.org/package=remotes), [tidyverse](https://cran.r-project.org/package=tidyverse)
-* Fixing issues with Travis CI: [Rdimtools](https://cran.r-project.org/package=Rdimtools), [slingshot](https://www.bioconductor.org/packages/slingshot), [monocle](https://www.bioconductor.org/packages/monocle), [splatter](https://www.bioconductor.org/packages/splatter)
+* Algorithmic optimisations: [slingshot](https://www.bioconductor.org/packages/slingshot)
+* Extend   functionality: [ggrepel](https://cran.r-project.org/package=ggrepel), [ParamHelpers](https://cran.r-project.org/package=ParamHelpers), [ranger](https://cran.r-project.org/package=ranger), [rlang](https://cran.r-project.org/package=rlang)
+* Fix bugs: [devtools](https://cran.r-project.org/package=devtools), [monocle](https://www.bioconductor.org/packages/monocle), [proxyC](https://cran.r-project.org/package=proxyC), [rticles](https://cran.r-project.org/package=rticles), [shadowtext](https://cran.r-project.org/package=shadowtext)
+* Maintain packages: [diffusionMap](https://cran.r-project.org/package=diffusionMap), [princurve](https://cran.r-project.org/package=princurve), [GillespieSSA](https://cran.r-project.org/package=GillespieSSA)
+* Documentation: [devtools](https://cran.r-project.org/package=devtools), [mlr](https://cran.r-project.org/package=mlr), [remotes](https://cran.r-project.org/package=remotes), [tidyverse](https://cran.r-project.org/package=tidyverse), [ŋraphsim](https://CRAN.R-project.org/package=graphsim), [MaterialNet](https://github.com/TRI-AMDD/materialnet)
+* Continuous integration: [Rdimtools](https://cran.r-project.org/package=Rdimtools), [slingshot](https://www.bioconductor.org/packages/slingshot), [monocle](https://www.bioconductor.org/packages/monocle), [splatter](https://www.bioconductor.org/packages/splatter), [SingleCellOpenProblems](https://github.com/singlecellopenproblems/SingleCellOpenProblems)
