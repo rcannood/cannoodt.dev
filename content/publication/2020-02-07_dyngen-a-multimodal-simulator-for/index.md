@@ -10,7 +10,7 @@ author_notes:
 - Equal contribution
 date: "2020-02-07T00:00:00Z"
 doi: 10.1101/2020.02.06.936971
-featured: false
+featured: true
 image:
   caption: 'Showcase of dyngen functionality.'
   focal_point: ''
