@@ -30,11 +30,13 @@ for (i in seq_len(nrow(works2))) {
   folder <- works2$folder[[i]]
   index_md <- paste0(folder, "/index.md")
   authors <- works2$author[[i]] %>% 
-    mutate(label = paste0(
-      ifelse(given == "Robrecht" & family == "Cannoodt", "<b>", ""),
-      given, " ", family,
-      ifelse(given == "Robrecht" & family == "Cannoodt", "</b>", "")
-    ))
+    mutate(
+      label = ifelse(
+        given == "Robrecht" & family == "Cannoodt", 
+        "rcannood",
+        paste0(given, " ", family)
+      )
+    )
   journal_name <- works2$journal_name[[i]]
   
   
