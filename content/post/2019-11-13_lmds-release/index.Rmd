@@ -30,7 +30,7 @@ containing 392 profiles which measure the abundance levels of 2000 different mol
 Note that while the dataset is thus only a 392×2000 matrix, LMDS is designed to scale to much higher dimensionality, as demonstrated in the last section.
 
 Simply looking at the raw expression values as a heatmap reveals little to no information:
- 
+
 ```{r heatmap, message=FALSE, warning=FALSE}
 library(tidyverse)
 set.seed(1)
@@ -124,7 +124,7 @@ while (time < 10) {
   subx <- largex[seq_len(num_samples),]
   time <- system.time({
     dimred <- lmds(subx)
-  })[["user.self"]]
+  })[["elapsed"]]
   log[[length(log) + 1]] <- tibble(method = "lmds()", num_samples, time)
   num_samples <- num_samples * 1.5
 }
@@ -136,7 +136,7 @@ while (time < 10) {
   time <- system.time({
     dist <- dist(subx)
     dimred <- cmdscale(dist)
-  })[["user.self"]]
+  })[["elapsed"]]
   log[[length(log) + 1]] <- tibble(method = "cmdscale()", num_samples, time)
   num_samples <- num_samples * 1.5
 }
