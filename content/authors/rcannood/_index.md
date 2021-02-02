@@ -26,7 +26,7 @@ interests:
 title: Robrecht Cannoodt
 organizations:
 - name: Data Intuitive
-  url: "http://www.data-intuitive.com"
+  url: "https://www.data-intuitive.com"
 - name: IRC VIB
   url: "https://www.irc.ugent.be"
 role: Data Science Engineer
@@ -52,6 +52,6 @@ user_groups:
 - Visitors
 ---
 
-Hello, my name is Robrecht Cannoodt. I just obtained by PhD as a computer scientist specialising in data science ([dissertation](files/phdthesis.pdf)). I work as a data science consultant at Data Intuitive and as a postdoctoral researcher at VIB - Ghent University.
+Hello, my name is Robrecht Cannoodt. I just obtained by PhD as a computer scientist specialising in data science ([dissertation](files/phdthesis.pdf)). I work as a data science engineer at [Data Intuitive](https://www.data-intuitive.com) and as a postdoctoral researcher at [VIB - Ghent University](https://www.irc.ugent.be).
 
 I enjoy developing and contributing to data science software projects (See [Software](software)). In particular: developing or speeding up algorithms; adding functionality to existing software; and contributing to open-source projects. During my PhD, I developed tools for analysing single-cell omics data, and tools for benchmarking single-cell omics tools. However, many of the software packages I (co-)developed can be used for general-purpose data mining applications.
