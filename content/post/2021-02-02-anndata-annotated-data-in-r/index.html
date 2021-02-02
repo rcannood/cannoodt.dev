@@ -103,9 +103,9 @@ ad</code></pre>
 ## s2    5    7    9</code></pre>
 <pre class="r"><code>ad$uns[[&quot;b&quot;]]</code></pre>
 <pre><code>##   i j     value
-## 1 1 4 0.8699716
-## 2 2 5 0.5138496
-## 3 3 6 0.1019464</code></pre>
+## 1 1 4 0.1304560
+## 2 2 5 0.5043473
+## 3 3 6 0.3199207</code></pre>
 <div id="using-scanpy" class="section level3">
 <h3>Using scanpy</h3>
 <p>A nice side-effect of loading this package is that it is now super easy to
@@ -230,7 +230,7 @@ list(ad = ad$X, ad3 = ad3$X)</code></pre>
 Some more helper functions and helper classes need to be defined in order to fully encapsulate
 <code>AnnData()</code> objects. Examples are:</p>
 <pre class="r"><code>ad$chunked_X(1)</code></pre>
-<pre><code>## &lt;generator object AnnData.chunked_X at 0x7fc3f09e4200&gt;</code></pre>
+<pre><code>## &lt;generator object AnnData.chunked_X at 0x7faf1ff11258&gt;</code></pre>
 <p>Following functionality has not been tested:</p>
 <pre class="r"><code>ad$rename_categories(...)
 ad$strings_to_categoricals(...)</code></pre>
