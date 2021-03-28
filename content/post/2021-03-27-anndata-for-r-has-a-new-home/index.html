@@ -1,0 +1,73 @@
+---
+title: "anndata for R has a new home!"
+author: rcannood
+date: 2021-03-27T20:53:00+00:00
+categories: ["Data science"]
+tags: ["Data science", "Bioinformatics", "scanpy", "Transcriptomics", "R"]
+summary: "Welcome to the dynverse project :)"
+subtitle: "Welcome to the dynverse project :)"
+image:
+  caption: "anndata provides a scalable way of keeping track of data and learned annotations."
+bibliography: references.bib
+---
+
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>anndata for R is brings h5ad processing to R with the same
+easy-to-use interface as the Python <a href="https://anndata.readthedocs.io/en/latest/"><code>anndata</code></a> API.
+No longer do you have to fiddle with hdf5r, reticulate or <a href="https://github.com/cellgeni/sceasy">one</a> <a href="https://bioconductor.org/packages/release/bioc/html/zellkonverter.html">of</a> <a href="https://github.com/mojaveazure/seurat-disk">the</a>
+<a href="https://anndata.readthedocs.io/en/latest/anndata.read_loom.html">many</a> <a href="https://satijalab.org/seurat/archive/v3.1/conversion_vignette.html">conversion</a>
+<a href="https://scanpy.readthedocs.io/en/stable/api/index.html#reading">functions</a>.</p>
+<p>The code base for anndata for R has been moved from rcannood/anndata to <a href="https://github.com/dynverse/anndata">dynverse/anndata</a> and with it got a
+fancy new homepage to be able to browse the documentation from: <a href="https://anndata.dynverse.org">anndata.dynverse.org</a>!</p>
+<p>If you haven’t yet, please give anndata for R a try! We’ve found that by using anndata for R, interacting with other anndata-based Python packages becomes super easy<a href="#additional-thoughts">¹</a>! Below is a small demonstration.</p>
+<div id="download-and-load-dataset" class="section level2">
+<h2>Download and load dataset</h2>
+<p>Let’s use a 10x dataset from the 10x genomics website.
+You can download it to an anndata object with scanpy as follows:</p>
+<pre class="r"><code>library(anndata)
+library(reticulate)
+sc &lt;- import(&quot;scanpy&quot;)
+
+url &lt;- &quot;https://cf.10xgenomics.com/samples/cell-exp/6.0.0/SC3_v3_NextGem_DI_CellPlex_CSP_DTC_Sorted_30K_Squamous_Cell_Carcinoma/SC3_v3_NextGem_DI_CellPlex_CSP_DTC_Sorted_30K_Squamous_Cell_Carcinoma_count_sample_feature_bc_matrix.h5&quot;
+ad &lt;- sc$read_10x_h5(&quot;dataset.h5&quot;, backup_url = url)
+
+ad</code></pre>
+<pre><code>## AnnData object with n_obs × n_vars = 5377 × 36601
+##     var: &#39;gene_ids&#39;, &#39;feature_types&#39;, &#39;genome&#39;</code></pre>
+</div>
+<div id="preprocessing-dataset" class="section level2">
+<h2>Preprocessing dataset</h2>
+<p>The resuling dataset is a wrapper for the Python class but behaves very much like an R object:</p>
+<pre class="r"><code>ad[1:5, 3:5]</code></pre>
+<pre><code>## View of AnnData object with n_obs × n_vars = 5 × 3
+##     var: &#39;gene_ids&#39;, &#39;feature_types&#39;, &#39;genome&#39;</code></pre>
+<pre class="r"><code>dim(ad)</code></pre>
+<pre><code>## [1]  5377 36601</code></pre>
+<p>You can still call scanpy functions on it, for example to perform preprocessing.</p>
+<pre class="r"><code>sc$pp$filter_cells(ad, min_genes = 200)
+sc$pp$filter_genes(ad, min_cells = 3)
+sc$pp$normalize_per_cell(ad)
+sc$pp$log1p(ad)</code></pre>
+</div>
+<div id="analysing-your-dataset-in-r" class="section level2">
+<h2>Analysing your dataset in R</h2>
+<p>You can seamlessly switch back to using your dataset with other R functions.
+For example, calculating the rowMeans of the expression matrix.</p>
+<pre class="r"><code>library(Matrix) 
+rowMeans(ad$X[1:10,])</code></pre>
+<pre><code>## AAACCCAAGCGCGTTC-1 AAACCCAAGGCAATGC-1 AAACCCAGTATCTTCT-1 AAACCCAGTGACAACG-1 
+##         0.05451418         0.13627126         0.12637224         0.13958617 
+## AAACCCAGTTGAATCC-1 AAACCCATCGGCTTGG-1 AAACGAAAGAGAGCCT-1 AAACGAAAGCTTAAGA-1 
+##         0.05979424         0.11365747         0.05011727         0.14347849 
+## AAACGAAAGGCACGAT-1 AAACGAAAGGTAGCCA-1 
+##         0.12979302         0.12366312</code></pre>
+</div>
+<div id="additional-thoughts" class="section level2">
+<h2>Additional thoughts</h2>
+<p>¹ When it works. While anndata for R has certainly been useful for us, there is still a lot left to implement.
+For example, using h5ad-backed AnnData objects does not work yet.
+If you do encounter an issue, let us know by means of a <a href="https://github.com/dynverse/anndata/issues">GitHub Issue</a>.
+Make sure to include a reproducible example!</p>
+</div>

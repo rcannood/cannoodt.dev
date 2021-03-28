@@ -1,0 +1,67 @@
+---
+title: "anndata for R has a new home!"
+author: rcannood
+date: 2021-03-27T20:53:00+00:00
+categories: ["Data science"]
+tags: ["Data science", "Bioinformatics", "scanpy", "Transcriptomics", "R"]
+summary: "Welcome to the dynverse project :)"
+subtitle: "Welcome to the dynverse project :)"
+image:
+  caption: "anndata provides a scalable way of keeping track of data and learned annotations."
+bibliography: references.bib
+---
+
+anndata for R is brings h5ad processing to R with the same 
+easy-to-use interface as the Python [`anndata`](https://anndata.readthedocs.io/en/latest/) API.
+No longer do you have to fiddle with hdf5r, reticulate or [one](https://github.com/cellgeni/sceasy) [of](https://bioconductor.org/packages/release/bioc/html/zellkonverter.html) [the](https://github.com/mojaveazure/seurat-disk)
+[many](https://anndata.readthedocs.io/en/latest/anndata.read_loom.html) [conversion](https://satijalab.org/seurat/archive/v3.1/conversion_vignette.html)
+[functions](https://scanpy.readthedocs.io/en/stable/api/index.html#reading).
+
+The code base for anndata for R has been moved from rcannood/anndata to [dynverse/anndata](https://github.com/dynverse/anndata) and with it got a 
+fancy new homepage to be able to browse the documentation from: [anndata.dynverse.org](https://anndata.dynverse.org)!
+
+If you haven't yet, please give anndata for R a try! We've found that by using anndata for R, interacting with other anndata-based Python packages becomes super easy[¹](#additional-thoughts)! Below is a small demonstration.
+
+## Download and load dataset
+Let's use a 10x dataset from the 10x genomics website.
+You can download it to an anndata object with scanpy as follows:
+```{r}
+library(anndata)
+library(reticulate)
+sc <- import("scanpy")
+
+url <- "https://cf.10xgenomics.com/samples/cell-exp/6.0.0/SC3_v3_NextGem_DI_CellPlex_CSP_DTC_Sorted_30K_Squamous_Cell_Carcinoma/SC3_v3_NextGem_DI_CellPlex_CSP_DTC_Sorted_30K_Squamous_Cell_Carcinoma_count_sample_feature_bc_matrix.h5"
+ad <- sc$read_10x_h5("dataset.h5", backup_url = url)
+
+ad
+```
+
+## Preprocessing dataset
+The resuling dataset is a wrapper for the Python class but behaves very much like an R object:
+```{r}
+ad[1:5, 3:5]
+dim(ad)
+``` 
+
+You can still call scanpy functions on it, for example to perform preprocessing.
+```{r}
+sc$pp$filter_cells(ad, min_genes = 200)
+sc$pp$filter_genes(ad, min_cells = 3)
+sc$pp$normalize_per_cell(ad)
+sc$pp$log1p(ad)
+```
+
+## Analysing your dataset in R
+You can seamlessly switch back to using your dataset with other R functions. 
+For example, calculating the rowMeans of the expression matrix.
+```{r}
+library(Matrix) 
+rowMeans(ad$X[1:10,])
+```
+
+## Additional thoughts
+
+¹ When it works. While anndata for R has certainly been useful for us, there is still a lot left to implement. 
+For example, using h5ad-backed AnnData objects does not work yet.
+If you do encounter an issue, let us know by means of a [GitHub Issue](https://github.com/dynverse/anndata/issues).
+Make sure to include a reproducible example!

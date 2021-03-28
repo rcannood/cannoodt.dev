@@ -1,5 +1,5 @@
 ---
-title: "anndata: annotated data in R"
+title: "anndata for R"
 author: rcannood
 date: 2021-02-02T20:53:00+00:00
 categories: ["Data science"]
@@ -26,7 +26,7 @@ We recently published [`anndata`](https://cran.r-project.org/package=anndata) on
 which is an R wrapper for the Python package -- with some syntax sprinkled on top to make
 R users feel more at home. 
 
-The R anndata is still under active development at [github.com/rcannood/anndata](https://github.com/rcannood/anndata). 
+The R anndata is still under active development at [github.com/dynverse/anndata](https://github.com/dynverse/anndata). 
 If you encounter any issues, feel free to post an issue on GitHub!
 
 ## Installation

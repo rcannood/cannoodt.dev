@@ -1,5 +1,5 @@
 ---
-title: "anndata: annotated data in R"
+title: "anndata for R"
 author: rcannood
 date: 2021-02-02T20:53:00+00:00
 categories: ["Data science"]
@@ -26,7 +26,7 @@ some of the python objects into R.</p>
 <p>We recently published <a href="https://cran.r-project.org/package=anndata"><code>anndata</code></a> on CRAN,
 which is an R wrapper for the Python package – with some syntax sprinkled on top to make
 R users feel more at home.</p>
-<p>The R anndata is still under active development at <a href="https://github.com/rcannood/anndata">github.com/rcannood/anndata</a>.
+<p>The R anndata is still under active development at <a href="https://github.com/dynverse/anndata">github.com/dynverse/anndata</a>.
 If you encounter any issues, feel free to post an issue on GitHub!</p>
 <div id="installation" class="section level2">
 <h2>Installation</h2>
@@ -103,9 +103,9 @@ ad</code></pre>
 ## s2    5    7    9</code></pre>
 <pre class="r"><code>ad$uns[[&quot;b&quot;]]</code></pre>
 <pre><code>##   i j     value
-## 1 1 4 0.1304560
-## 2 2 5 0.5043473
-## 3 3 6 0.3199207</code></pre>
+## 1 1 4 0.1316952
+## 2 2 5 0.9088103
+## 3 3 6 0.6214928</code></pre>
 <div id="using-scanpy" class="section level3">
 <h3>Using scanpy</h3>
 <p>A nice side-effect of loading this package is that it is now super easy to
@@ -230,7 +230,7 @@ list(ad = ad$X, ad3 = ad3$X)</code></pre>
 Some more helper functions and helper classes need to be defined in order to fully encapsulate
 <code>AnnData()</code> objects. Examples are:</p>
 <pre class="r"><code>ad$chunked_X(1)</code></pre>
-<pre><code>## &lt;generator object AnnData.chunked_X at 0x7faf1ff11258&gt;</code></pre>
+<pre><code>## &lt;generator object AnnData.chunked_X at 0x7f9040bf4258&gt;</code></pre>
 <p>Following functionality has not been tested:</p>
 <pre class="r"><code>ad$rename_categories(...)
 ad$strings_to_categoricals(...)</code></pre>

@@ -1,7 +1,7 @@
 ---
 authors:
 - rcannood
-bio: My research interests include computer science, machine learning, bioinformatics, and single-cell omics.
+bio: R is a horrible language, and I love it (ever since tidyverse, at least).
 education:
   courses:
   - course: PhD in Computer Science
@@ -18,10 +18,8 @@ education:
     year: 2007
 email: "rcannood@gmail.com"
 interests:
-- Computer Science
-- Machine Learning
-- Software Engineering
-- Bioinformatics
+- Software Engineering <br/>(mostly R, Scala & Bash) 
+- Data Science <br/>(Bioinformatics, Machine learning)
 - Single-Cell Omics
 title: Robrecht Cannoodt
 organizations:
